@@ -1,0 +1,139 @@
+[
+  {
+    "id": "hcc-001",
+    "name": "新竹市私立小樹苗托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區光復路二段100號",
+    "phone": "03-5710000",
+    "capacity": 30,
+    "quasiPublic": true,
+    "accreditation": { "year": 2024, "grade": "甲" },
+    "lat": 24.7981,
+    "lng": 120.9862,
+    "links": {
+      "facebook": "https://www.facebook.com/example-seedling",
+      "website": "https://example.com/seedling"
+    }
+  },
+  {
+    "id": "hcc-002",
+    "name": "新竹市私立晨光托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關新路50號",
+    "phone": "03-5720000",
+    "capacity": 24,
+    "quasiPublic": false,
+    "accreditation": { "year": 2023, "grade": "乙" },
+    "lat": 24.7863,
+    "lng": 121.0125,
+    "links": {
+      "instagram": "https://www.instagram.com/example-morninglight"
+    }
+  },
+  {
+    "id": "hcc-003",
+    "name": "新竹市私立寶貝窩托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區經國路一段200號",
+    "phone": "03-5330000",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": { "year": 2024, "grade": "乙" },
+    "lat": 24.8123,
+    "lng": 120.9622,
+    "links": {
+      "facebook": "https://www.facebook.com/example-babynest"
+    }
+  },
+  {
+    "id": "hcc-004",
+    "name": "新竹市東區社區公共托育家園",
+    "type": "社區公共托育家園",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區民族路10號",
+    "phone": "03-5340000",
+    "capacity": 12,
+    "quasiPublic": true,
+    "accreditation": { "year": 2024, "grade": "甲" },
+    "lat": 24.8055,
+    "lng": 120.9701,
+    "links": {}
+  },
+  {
+    "id": "hcc-005",
+    "name": "新竹市私立慢慢長大托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "香山區",
+    "address": "新竹市香山區牛埔路300號",
+    "phone": "03-5380000",
+    "capacity": 20,
+    "quasiPublic": false,
+    "lat": 24.7826,
+    "lng": 120.9345,
+    "links": {
+      "website": "https://example.com/growslow"
+    }
+  },
+  {
+    "id": "hsc-001",
+    "name": "新竹縣私立竹風托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市光明六路60號",
+    "phone": "03-5580000",
+    "capacity": 36,
+    "quasiPublic": true,
+    "accreditation": { "year": 2023, "grade": "甲" },
+    "lat": 24.8268,
+    "lng": 121.0136,
+    "links": {
+      "facebook": "https://www.facebook.com/example-bamboowind",
+      "instagram": "https://www.instagram.com/example-bamboowind",
+      "website": "https://example.com/bamboowind"
+    }
+  },
+  {
+    "id": "hsc-002",
+    "name": "新竹縣竹北市公設民營松鼠家托嬰中心",
+    "type": "公設民營",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市文興路一段10號",
+    "phone": "03-6580000",
+    "capacity": 45,
+    "quasiPublic": true,
+    "accreditation": { "year": 2024, "grade": "甲" },
+    "lat": 24.8149,
+    "lng": 121.0284,
+    "links": {
+      "facebook": "https://www.facebook.com/example-squirrel"
+    }
+  },
+  {
+    "id": "hsc-003",
+    "name": "新竹縣私立禾樂托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮長春路三段20號",
+    "phone": "03-5960000",
+    "capacity": 28,
+    "quasiPublic": false,
+    "accreditation": { "year": 2022, "grade": "丙" },
+    "lat": 24.7333,
+    "lng": 121.0866,
+    "links": {
+      "facebook": "https://www.facebook.com/example-hole",
+      "website": "https://example.com/hole"
+    }
+  }
+]

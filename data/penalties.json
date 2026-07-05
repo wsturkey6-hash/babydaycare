@@ -1,0 +1,38 @@
+[
+  {
+    "centerId": "hcc-003",
+    "centerName": "新竹市私立寶貝窩托嬰中心",
+    "date": "2025-11-14",
+    "violation": "未依規定師生比配置托育人員",
+    "law": "兒童及少年福利與權益保障法第90條",
+    "fine": 60000,
+    "sourceUrl": "https://example.gov.tw/penalty/1"
+  },
+  {
+    "centerId": "hcc-003",
+    "centerName": "新竹市私立寶貝窩托嬰中心",
+    "date": "2024-06-03",
+    "violation": "監視錄影設備未依規定保存影像資料",
+    "law": "兒童及少年福利機構設置標準",
+    "fine": 30000,
+    "sourceUrl": "https://example.gov.tw/penalty/2"
+  },
+  {
+    "centerId": "hsc-003",
+    "centerName": "新竹縣私立禾樂托嬰中心",
+    "date": "2026-02-20",
+    "violation": "托育人員對嬰幼兒有不當對待行為，情節輕微",
+    "law": "兒童及少年福利與權益保障法第49條",
+    "fine": 120000,
+    "sourceUrl": "https://example.gov.tw/penalty/3"
+  },
+  {
+    "centerId": null,
+    "centerName": "新竹市私立已歇業托嬰中心",
+    "date": "2023-08-01",
+    "violation": "超收嬰幼兒",
+    "law": "兒童及少年福利與權益保障法第90條",
+    "fine": 60000,
+    "sourceUrl": "https://example.gov.tw/penalty/4"
+  }
+]

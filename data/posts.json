@@ -1,0 +1,47 @@
+[
+  {
+    "centerId": "hcc-001",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/example-seedling/posts/1",
+    "date": "2026-06-28",
+    "excerpt": "【招生中】8月份尚有 2 個名額，歡迎預約參觀！",
+    "isRecruiting": true,
+    "fetchedAt": "2026-07-04"
+  },
+  {
+    "centerId": "hsc-001",
+    "platform": "web",
+    "postUrl": "https://example.com/bamboowind/news/2026-07",
+    "date": "2026-07-01",
+    "excerpt": "115學年度招生開跑，0-2歲收托報名中，額滿為止。",
+    "isRecruiting": true,
+    "fetchedAt": "2026-07-04"
+  },
+  {
+    "centerId": "hsc-003",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/example-hole/posts/9",
+    "date": "2026-06-15",
+    "excerpt": "目前有少量缺額，歡迎來電洽詢收托事宜。",
+    "isRecruiting": true,
+    "fetchedAt": "2026-07-04"
+  },
+  {
+    "centerId": "hcc-002",
+    "platform": "instagram",
+    "postUrl": "https://www.instagram.com/p/example2",
+    "date": "2026-03-01",
+    "excerpt": "春季招生說明會花絮（已結束）",
+    "isRecruiting": true,
+    "fetchedAt": "2026-07-04"
+  },
+  {
+    "centerId": "hcc-003",
+    "platform": "facebook",
+    "postUrl": "https://www.facebook.com/example-babynest/posts/3",
+    "date": "2026-06-20",
+    "excerpt": "端午節親子活動照片分享",
+    "isRecruiting": false,
+    "fetchedAt": "2026-07-04"
+  }
+]
