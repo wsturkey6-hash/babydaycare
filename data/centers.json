@@ -217,7 +217,9 @@
     },
     "lat": 24.800525,
     "lng": 120.961002,
-    "links": {}
+    "links": {
+      "website": "https://www.lovecradle.com.tw/"
+    }
   },
   {
     "id": "CW11308003",
@@ -231,7 +233,9 @@
     "quasiPublic": true,
     "lat": 24.818114,
     "lng": 120.965415,
-    "links": {}
+    "links": {
+      "website": "https://www.lovecradle.com.tw/"
+    }
   },
   {
     "id": "CW11105005",
@@ -249,7 +253,9 @@
     },
     "lat": 24.817443,
     "lng": 120.964987,
-    "links": {}
+    "links": {
+      "website": "https://www.lovecradle.com.tw/"
+    }
   },
   {
     "id": "CW11205074",
@@ -669,7 +675,9 @@
     },
     "lat": 24.783006,
     "lng": 121.017837,
-    "links": {}
+    "links": {
+      "website": "https://www.babykingdom.tw/"
+    }
   },
   {
     "id": "CW11505005",
@@ -2117,7 +2125,9 @@
     },
     "lat": 24.819352,
     "lng": 121.024949,
-    "links": {}
+    "links": {
+      "website": "https://www.babykingdom.tw/"
+    }
   },
   {
     "id": "CW11310012",
