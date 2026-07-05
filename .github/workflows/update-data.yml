@@ -1,0 +1,54 @@
+name: 每週更新資料
+
+on:
+  schedule:
+    # 每週一 台灣時間 06:00（UTC 22:00 週日）
+    - cron: "0 22 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: 同步托嬰中心名單
+        run: npx tsx scripts/sync-centers.ts
+
+      - name: 更新裁罰紀錄
+        run: npx tsx scripts/fetch-penalties.ts
+
+      - name: 掃描官網招生
+        run: npx tsx scripts/fetch-websites.ts
+
+      - name: 抓取 FB/IG 貼文（缺 APIFY_TOKEN 時跳過）
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          if [ -z "$APIFY_TOKEN" ]; then
+            echo "未設定 APIFY_TOKEN secret，跳過 FB/IG 抓取"
+          else
+            npx tsx scripts/fetch-social.ts
+          fi
+
+      - name: 有變更才 commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "資料無變更"
+          else
+            git commit -m "chore: 每週資料更新 $(date +%F)"
+            git push
+          fi
