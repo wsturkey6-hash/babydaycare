@@ -142,7 +142,11 @@ export default function CenterDetail({
           裁罰紀錄
         </h3>
         {status.hasPenalty ? (
-          <ul className="mt-2 space-y-2">
+          <>
+            <p className="mt-1 text-xs text-slate">
+              資料來自衛福部裁罰公告，以機構名稱自動比對；請以公告原文為準。
+            </p>
+            <ul className="mt-2 space-y-2">
             {status.penalties.map((p) => (
               <li
                 key={`${p.date}-${p.violation}`}
@@ -164,7 +168,8 @@ export default function CenterDetail({
                 </a>
               </li>
             ))}
-          </ul>
+            </ul>
+          </>
         ) : (
           <p className="mt-2 text-xs text-slate">查無裁罰紀錄。</p>
         )}

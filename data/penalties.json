@@ -1,38 +1,210 @@
 [
   {
-    "centerId": "hcc-003",
-    "centerName": "新竹市私立寶貝窩托嬰中心",
-    "date": "2025-11-14",
-    "violation": "未依規定師生比配置托育人員",
-    "law": "兒童及少年福利與權益保障法第90條",
-    "fine": 60000,
-    "sourceUrl": "https://example.gov.tw/penalty/1"
-  },
-  {
-    "centerId": "hcc-003",
-    "centerName": "新竹市私立寶貝窩托嬰中心",
-    "date": "2024-06-03",
-    "violation": "監視錄影設備未依規定保存影像資料",
-    "law": "兒童及少年福利機構設置標準",
-    "fine": 30000,
-    "sourceUrl": "https://example.gov.tw/penalty/2"
-  },
-  {
-    "centerId": "hsc-003",
-    "centerName": "新竹縣私立禾樂托嬰中心",
-    "date": "2026-02-20",
-    "violation": "托育人員對嬰幼兒有不當對待行為，情節輕微",
-    "law": "兒童及少年福利與權益保障法第49條",
-    "fine": 120000,
-    "sourceUrl": "https://example.gov.tw/penalty/3"
+    "centerId": "CW10606001",
+    "centerName": "新竹縣私立理想圓托嬰中心",
+    "date": "2025-12-18",
+    "violation": "提供不安全設施或設備：違反兒童及少年福利與權益保障法第83條第3款規定。",
+    "law": "兒童及少年福利與權益保障法第107條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/10290"
   },
   {
     "centerId": null,
-    "centerName": "新竹市私立已歇業托嬰中心",
-    "date": "2023-08-01",
-    "violation": "超收嬰幼兒",
-    "law": "兒童及少年福利與權益保障法第90條",
-    "fine": 60000,
-    "sourceUrl": "https://example.gov.tw/penalty/4"
+    "centerName": "新竹市私立愛格樂國際音樂托嬰中心慈雲校",
+    "date": "2025-04-01",
+    "violation": "虐待或妨害兒少身心健康：受處分人規劃之照顧模式已有妨礙幼兒身心健康之情事",
+    "law": "兒童及少年福利與權益保障法第107條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/7120"
+  },
+  {
+    "centerId": null,
+    "centerName": "新竹縣私立道禾托嬰中心",
+    "date": "2024-08-26",
+    "violation": "虐待或妨害兒少身心健康：違反兒童及少年福利與權益保障法第83條第1款規定",
+    "law": "兒童及少年福利與權益保障法第107條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/5582"
+  },
+  {
+    "centerId": null,
+    "centerName": "新竹市私立慈耕托嬰中心",
+    "date": "2019-11-20",
+    "violation": "虐待或妨害兒少身心健康：未落實督導各托育人員執行執行照顧情形，致嚴重侵害幼童權益",
+    "law": "兒童及少年福利與權益保障法第107條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/643"
+  },
+  {
+    "centerId": null,
+    "centerName": "新竹縣私立潘朵拉托嬰中心",
+    "date": "2019-08-30",
+    "violation": "違反法令或捐助章程：違反兒童及少年福利與權益保障法",
+    "law": "兒童及少年福利與權益保障法第108條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/792"
+  },
+  {
+    "centerId": null,
+    "centerName": "新竹市私立玉兒托嬰中心科園分校(已歇業)",
+    "date": "2019-05-31",
+    "violation": "工作業務報告申報不實：違反第83條第9款規定",
+    "law": "兒童及少年福利與權益保障法第108條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/687"
+  },
+  {
+    "centerId": "CW10611002",
+    "centerName": "新竹市私立熊寶貝托嬰中心(黃子堯)",
+    "date": "2017-10-02",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/979"
+  },
+  {
+    "centerId": null,
+    "centerName": "葉桂娥(托嬰中心稽查時尚無招牌)",
+    "date": "2017-09-04",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/1003"
+  },
+  {
+    "centerId": "CW10611005",
+    "centerName": "新竹市私立愛兒堡七星級國際音樂托嬰中心(夏立廉)",
+    "date": "2017-07-21",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/980"
+  },
+  {
+    "centerId": null,
+    "centerName": "陳香蘭(托嬰中心稽查時尚無招牌)",
+    "date": "2017-06-05",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/1002"
+  },
+  {
+    "centerId": null,
+    "centerName": "私立堡貝嘉托嬰中心(曾采慧)",
+    "date": "2017-05-01",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/971"
+  },
+  {
+    "centerId": null,
+    "centerName": "鍾佳莉(托嬰中心稽查時尚無招牌)",
+    "date": "2016-10-25",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/1004"
+  },
+  {
+    "centerId": null,
+    "centerName": "林佑泉(托嬰中心稽查時尚無招牌)",
+    "date": "2016-09-26",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/993"
+  },
+  {
+    "centerId": null,
+    "centerName": "洪姚美玲(托嬰中心稽查時尚無招牌)",
+    "date": "2016-07-28",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/994"
+  },
+  {
+    "centerId": null,
+    "centerName": "陳松儀(托嬰中心稽查時尚無招牌)",
+    "date": "2016-04-27",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/996"
+  },
+  {
+    "centerId": null,
+    "centerName": "陳葵梅(托嬰中心稽查時尚無招牌)",
+    "date": "2016-04-14",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/997"
+  },
+  {
+    "centerId": null,
+    "centerName": "古芳瑜(托嬰中心稽查時尚無招牌)",
+    "date": "2016-03-21",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/999"
+  },
+  {
+    "centerId": null,
+    "centerName": "徐華憶(托嬰中心稽查時尚無招牌)",
+    "date": "2016-01-28",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/1000"
+  },
+  {
+    "centerId": "CW10504003",
+    "centerName": "新竹縣私立伊頓國際托嬰中心(林育暄)",
+    "date": "2016-01-28",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/981"
+  },
+  {
+    "centerId": "CW10501009",
+    "centerName": "新竹縣私立優生園托嬰中心(張榕安)",
+    "date": "2016-01-28",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/983"
+  },
+  {
+    "centerId": null,
+    "centerName": "陳韻如（托嬰中心稽查時尚無招牌）",
+    "date": "2015-11-19",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/970"
+  },
+  {
+    "centerId": null,
+    "centerName": "林嘉琳（無招牌未立案托嬰中心）",
+    "date": "2014-12-12",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/972"
+  },
+  {
+    "centerId": null,
+    "centerName": "朱瑞鳳（無招牌未立案托嬰中心）",
+    "date": "2014-10-21",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/975"
+  },
+  {
+    "centerId": "CW10208004",
+    "centerName": "新竹縣私立夢想島嘉豐托嬰中心(張孟蓉)",
+    "date": "2014-07-31",
+    "violation": "未立案辦理兒少福利機構：未申請設立案許可",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/989"
+  },
+  {
+    "centerId": null,
+    "centerName": "傅玉婷（無招牌未立案托嬰中心）",
+    "date": "2014-05-26",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/977"
+  },
+  {
+    "centerId": null,
+    "centerName": "鄭紋玲（托嬰中心稽查時無招牌）",
+    "date": "2013-01-17",
+    "violation": "未立案辦理兒少福利機構：未立案托嬰中心",
+    "law": "兒童及少年福利與權益保障法第105條第1項",
+    "sourceUrl": "https://crc.sfaa.gov.tw/ChildYoungLaw/Detail/973"
   }
 ]
