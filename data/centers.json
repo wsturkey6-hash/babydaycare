@@ -1,139 +1,3000 @@
 [
   {
-    "id": "hcc-001",
-    "name": "新竹市私立小樹苗托嬰中心",
+    "id": "CW10404009",
+    "name": "台灣基督長老教會馬偕醫療財團法人附設新竹市私立馬偕托嬰中心",
     "type": "私立",
     "county": "新竹市",
     "district": "東區",
-    "address": "新竹市東區光復路二段100號",
-    "phone": "03-5710000",
-    "capacity": 30,
+    "address": "新竹市東區武功里建中路40號1樓",
+    "phone": "(03)6119595分機2570",
+    "capacity": 45,
     "quasiPublic": true,
-    "accreditation": { "year": 2024, "grade": "甲" },
-    "lat": 24.7981,
-    "lng": 120.9862,
-    "links": {
-      "facebook": "https://www.facebook.com/example-seedling",
-      "website": "https://example.com/seedling"
-    }
-  },
-  {
-    "id": "hcc-002",
-    "name": "新竹市私立晨光托嬰中心",
-    "type": "私立",
-    "county": "新竹市",
-    "district": "東區",
-    "address": "新竹市東區關新路50號",
-    "phone": "03-5720000",
-    "capacity": 24,
-    "quasiPublic": false,
-    "accreditation": { "year": 2023, "grade": "乙" },
-    "lat": 24.7863,
-    "lng": 121.0125,
-    "links": {
-      "instagram": "https://www.instagram.com/example-morninglight"
-    }
-  },
-  {
-    "id": "hcc-003",
-    "name": "新竹市私立寶貝窩托嬰中心",
-    "type": "私立",
-    "county": "新竹市",
-    "district": "北區",
-    "address": "新竹市北區經國路一段200號",
-    "phone": "03-5330000",
-    "capacity": 40,
-    "quasiPublic": true,
-    "accreditation": { "year": 2024, "grade": "乙" },
-    "lat": 24.8123,
-    "lng": 120.9622,
-    "links": {
-      "facebook": "https://www.facebook.com/example-babynest"
-    }
-  },
-  {
-    "id": "hcc-004",
-    "name": "新竹市東區社區公共托育家園",
-    "type": "社區公共托育家園",
-    "county": "新竹市",
-    "district": "東區",
-    "address": "新竹市東區民族路10號",
-    "phone": "03-5340000",
-    "capacity": 12,
-    "quasiPublic": true,
-    "accreditation": { "year": 2024, "grade": "甲" },
-    "lat": 24.8055,
-    "lng": 120.9701,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.801089,
+    "lng": 120.995018,
     "links": {}
   },
   {
-    "id": "hcc-005",
-    "name": "新竹市私立慢慢長大托嬰中心",
+    "id": "CW10903008",
+    "name": "新竹市北區公共托育家園",
+    "type": "社區公共托育家園",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區南勢里南勢六街11號3樓",
+    "phone": "(03)5232033",
+    "capacity": 12,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.8022,
+    "lng": 120.947991,
+    "links": {}
+  },
+  {
+    "id": "CW10604001",
+    "name": "新竹市私立小丸子托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區育英里育英路27號",
+    "phone": "(03)5281019",
+    "capacity": 29,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.797649,
+    "lng": 120.959897,
+    "links": {}
+  },
+  {
+    "id": "CW10112297",
+    "name": "新竹市私立小天使托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區建華里東南街188巷13號1樓",
+    "phone": "(03)5624358",
+    "capacity": 20,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.795258,
+    "lng": 120.974915,
+    "links": {}
+  },
+  {
+    "id": "CW10112318",
+    "name": "新竹市私立小天使托嬰中心經國分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區復興里經國路一段379巷15號1-2樓",
+    "phone": "(03)5456713",
+    "capacity": 50,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2022,
+      "grade": "丙"
+    },
+    "lat": 24.813971,
+    "lng": 120.979458,
+    "links": {}
+  },
+  {
+    "id": "CW10301015",
+    "name": "新竹市私立小太陽托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區南大里西大路102巷2號及2號2樓之1",
+    "phone": "(03)5622390",
+    "capacity": 17,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "乙"
+    },
+    "lat": 24.796405,
+    "lng": 120.970958,
+    "links": {}
+  },
+  {
+    "id": "CW10501002",
+    "name": "新竹市私立小豆芽托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區豐功里建美路27號1-2樓",
+    "phone": "(03)5749471",
+    "capacity": 19,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.801661,
+    "lng": 120.997508,
+    "links": {}
+  },
+  {
+    "id": "CW11403017",
+    "name": "新竹市私立小豆芽托嬰中心水源分校",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區光復里水源街73-1號、73-2號1樓及1樓夾層",
+    "phone": "(03)5751277",
+    "capacity": 31,
+    "quasiPublic": true,
+    "lat": 24.801388,
+    "lng": 120.991474,
+    "links": {}
+  },
+  {
+    "id": "CW11002006",
+    "name": "新竹市私立小星星托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區港北里中清路一段368、370號",
+    "phone": "(03)5360896",
+    "capacity": 55,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.830565,
+    "lng": 120.929106,
+    "links": {}
+  },
+  {
+    "id": "CW11404015",
+    "name": "新竹市私立小栗子托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區東勢里東新路5號1樓",
+    "phone": "(03)5724371",
+    "capacity": 27,
+    "quasiPublic": true,
+    "links": {}
+  },
+  {
+    "id": "CW11411005",
+    "name": "新竹市私立小麥子宥增托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區明湖里明湖路1010號1樓",
+    "phone": "(03)5191652",
+    "capacity": 38,
+    "quasiPublic": true,
+    "lat": 24.768843,
+    "lng": 120.977246,
+    "links": {}
+  },
+  {
+    "id": "CW10301016",
+    "name": "新竹市私立巴掌仙子托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區綠水里新竹市東光路35號1-2樓",
+    "phone": "(03)5712115",
+    "capacity": 28,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2024,
+      "grade": "優"
+    },
+    "lat": 24.802418,
+    "lng": 120.986816,
+    "links": {}
+  },
+  {
+    "id": "CW10605004",
+    "name": "新竹市私立心搖籃國際托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區育英里四維路63號2樓",
+    "phone": "(03)5280512",
+    "capacity": 60,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.800525,
+    "lng": 120.961002,
+    "links": {}
+  },
+  {
+    "id": "CW11308003",
+    "name": "新竹市私立心搖籃國際托嬰中心武陵二園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區武陵里武陵路67號",
+    "phone": "(03)5350996",
+    "capacity": 55,
+    "quasiPublic": true,
+    "lat": 24.818114,
+    "lng": 120.965415,
+    "links": {}
+  },
+  {
+    "id": "CW11105005",
+    "name": "新竹市私立心搖籃國際托嬰中心武陵園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區武陵里武陵路66號",
+    "phone": "(03)5408606",
+    "capacity": 49,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "優"
+    },
+    "lat": 24.817443,
+    "lng": 120.964987,
+    "links": {}
+  },
+  {
+    "id": "CW11205074",
+    "name": "新竹市私立方舟托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區武功里建功一路59巷22號1樓",
+    "phone": "(03)5165000",
+    "capacity": 42,
+    "quasiPublic": true,
+    "lat": 24.800501,
+    "lng": 120.995626,
+    "links": {}
+  },
+  {
+    "id": "CW10112288",
+    "name": "新竹市私立卡爾威特托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區武功里建功一路65號1樓",
+    "phone": "(03)5749777",
+    "capacity": 32,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.801354,
+    "lng": 120.996519,
+    "links": {}
+  },
+  {
+    "id": "CW10906009",
+    "name": "新竹市私立田果托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關東里關新東路262號1-2樓",
+    "phone": "(03)5797262",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.785627,
+    "lng": 121.020145,
+    "links": {}
+  },
+  {
+    "id": "CW10607014",
+    "name": "新竹市私立禾田托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區金竹里金竹路146、148號1-2樓",
+    "phone": "(03)5358101",
+    "capacity": 54,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.824298,
+    "lng": 120.971259,
+    "links": {}
+  },
+  {
+    "id": "CW11207015",
+    "name": "新竹市私立禾宸托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里慈雲路101號1.2樓",
+    "phone": "(03)5781177",
+    "capacity": 52,
+    "quasiPublic": true,
+    "lat": 24.791991,
+    "lng": 121.012113,
+    "links": {}
+  },
+  {
+    "id": "CW10806002",
+    "name": "新竹市私立吉寶托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區新莊里新莊街98、100、102及106號1-2樓",
+    "phone": "(03)6661592",
+    "capacity": 83,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2022,
+      "grade": "甲"
+    },
+    "lat": 24.786079,
+    "lng": 121.016572,
+    "links": {}
+  },
+  {
+    "id": "CW10706005",
+    "name": "新竹市私立同心園托嬰中心",
     "type": "私立",
     "county": "新竹市",
     "district": "香山區",
-    "address": "新竹市香山區牛埔路300號",
-    "phone": "03-5380000",
-    "capacity": 20,
-    "quasiPublic": false,
-    "lat": 24.7826,
-    "lng": 120.9345,
-    "links": {
-      "website": "https://example.com/growslow"
-    }
+    "address": "新竹市香山區大庄里遊樂街29巷50號1樓",
+    "phone": "(03)5303307",
+    "capacity": 17,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.793337,
+    "lng": 120.923559,
+    "links": {}
   },
   {
-    "id": "hsc-001",
-    "name": "新竹縣私立竹風托嬰中心",
+    "id": "CW10709002",
+    "name": "新竹市私立朵多托嬰中心一館",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里慈雲路66號1-2樓（含夾層）",
+    "phone": "(03)5798276",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.789868,
+    "lng": 121.011721,
+    "links": {}
+  },
+  {
+    "id": "CW10903019",
+    "name": "新竹市私立朵多托嬰中心二館",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里慈雲路60號",
+    "phone": "(03)5798276",
+    "capacity": 31,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.789696,
+    "lng": 121.011632,
+    "links": {}
+  },
+  {
+    "id": "CW10505006",
+    "name": "新竹市私立艾貝比托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區東園里光復路二段928號1-2樓",
+    "phone": "(03)5621164",
+    "capacity": 30,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.803152,
+    "lng": 120.981076,
+    "links": {}
+  },
+  {
+    "id": "CW10903014",
+    "name": "新竹市私立彤宇托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里埔頂二路188號",
+    "phone": "(03)5780800",
+    "capacity": 18,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.793284,
+    "lng": 121.009449,
+    "links": {}
+  },
+  {
+    "id": "CW10112294",
+    "name": "新竹市私立快樂寶貝托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區武陵里東大路二段230號1-3樓",
+    "phone": "(03)5357779",
+    "capacity": 25,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.81801,
+    "lng": 120.96379,
+    "links": {}
+  },
+  {
+    "id": "CW11410007",
+    "name": "新竹市私立沐芽托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里埔頂三路12號1樓至2樓",
+    "phone": "(03)5777212",
+    "capacity": 28,
+    "quasiPublic": false,
+    "lat": 24.78999,
+    "lng": 121.013289,
+    "links": {}
+  },
+  {
+    "id": "CW10210011",
+    "name": "新竹市私立貝比象托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區湳中里武陵路179巷6-1號",
+    "phone": "(03)5455336",
+    "capacity": 17,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.822249,
+    "lng": 120.968402,
+    "links": {}
+  },
+  {
+    "id": "CW10112311",
+    "name": "新竹市私立貝果托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里埔頂路245號1樓",
+    "phone": "(03)5678636",
+    "capacity": 18,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.794292,
+    "lng": 121.011396,
+    "links": {}
+  },
+  {
+    "id": "CW10112307",
+    "name": "新竹市私立孟格爾托嬰中心國泰分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區湳中里武陵路179巷10號1樓",
+    "phone": "(03)5455599",
+    "capacity": 18,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2022,
+      "grade": "甲"
+    },
+    "lat": 24.822472,
+    "lng": 120.967951,
+    "links": {}
+  },
+  {
+    "id": "CW11106001",
+    "name": "新竹市私立東新托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區東勢里東新路186號1、2樓",
+    "phone": "(03)5751137",
+    "capacity": 32,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "甲"
+    },
+    "lat": 24.808153,
+    "lng": 120.987617,
+    "links": {}
+  },
+  {
+    "id": "CW10504001",
+    "name": "新竹市私立育慈托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里埔頂三路77號",
+    "phone": "(03)5795136",
+    "capacity": 65,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2022,
+      "grade": "甲"
+    },
+    "lat": 24.790788,
+    "lng": 121.011169,
+    "links": {}
+  },
+  {
+    "id": "CW10302001",
+    "name": "新竹市私立育慈托嬰中心育芯分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里龍山東路202號1-2樓",
+    "phone": "(03)6686268",
+    "capacity": 34,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.789027,
+    "lng": 121.011983,
+    "links": {}
+  },
+  {
+    "id": "CW11011003",
+    "name": "新竹市私立芳岑托嬰中心慈雲館",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里慈雲路75號1-2樓",
+    "phone": "(03)5790575",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.791022,
+    "lng": 121.011768,
+    "links": {}
+  },
+  {
+    "id": "CW10112315",
+    "name": "新竹市私立金安福托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區東山里食品路134巷55號",
+    "phone": "(03)5622611",
+    "capacity": 50,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "乙"
+    },
+    "lat": 24.798631,
+    "lng": 120.976035,
+    "links": {}
+  },
+  {
+    "id": "CW11010011",
+    "name": "新竹市私立金安福托嬰中心林森分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區福德里林森路203號2樓",
+    "phone": "(03)5220706",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.798728,
+    "lng": 120.963974,
+    "links": {}
+  },
+  {
+    "id": "CW10512010",
+    "name": "新竹市私立長春藤托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區綠水里東光路29號1-2樓",
+    "phone": "(03)5728439",
+    "capacity": 37,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.802256,
+    "lng": 120.986851,
+    "links": {}
+  },
+  {
+    "id": "CW10112576",
+    "name": "新竹市私立娃娃國托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區仙水里光復路一段343號1-3樓",
+    "phone": "(03)5643563",
+    "capacity": 30,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.783006,
+    "lng": 121.017837,
+    "links": {}
+  },
+  {
+    "id": "CW11505005",
+    "name": "新竹市私立星安托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區育英里四維路21巷25號1樓-3樓",
+    "phone": "(03)5261597",
+    "capacity": 65,
+    "quasiPublic": false,
+    "lat": 24.798123,
+    "lng": 120.961894,
+    "links": {}
+  },
+  {
+    "id": "CW10804005",
+    "name": "新竹市私立羿柔托嬰中心關埔一館",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里慈雲路62號1-2樓",
+    "phone": "(03)6662631",
+    "capacity": 35,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "甲"
+    },
+    "lat": 24.789784,
+    "lng": 121.011674,
+    "links": {}
+  },
+  {
+    "id": "CW10804006",
+    "name": "新竹市私立羿柔托嬰中心關埔二館",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里慈雲路68號1-2樓",
+    "phone": "(03)6662631",
+    "capacity": 78,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "甲"
+    },
+    "lat": 24.789951,
+    "lng": 121.01175,
+    "links": {}
+  },
+  {
+    "id": "CW10408011",
+    "name": "新竹市私立恩潔托嬰中心少年分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區民富里少年街43-1號1-2樓及45號1-2樓",
+    "phone": "(03)5250405",
+    "capacity": 41,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.806023,
+    "lng": 120.959687,
+    "links": {}
+  },
+  {
+    "id": "CW10112303",
+    "name": "新竹市私立茱蒂園托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區光華里光華街78巷1號1樓",
+    "phone": "(03)5358847",
+    "capacity": 15,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.817111,
+    "lng": 120.972573,
+    "links": {}
+  },
+  {
+    "id": "CW10903005",
+    "name": "新竹市私立茱蒂園托嬰中心寶貝分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區金華里光華南街54之5號",
+    "phone": "(03)5330234",
+    "capacity": 17,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.816726,
+    "lng": 120.973104,
+    "links": {}
+  },
+  {
+    "id": "CW10112279",
+    "name": "新竹市私立國際音樂托嬰中心北區民富校",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區西雅里民富街256號1樓",
+    "phone": "(03)5221672",
+    "capacity": 21,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.803876,
+    "lng": 120.957451,
+    "links": {}
+  },
+  {
+    "id": "CW10506003",
+    "name": "新竹市私立婕之寶托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區復中里錦華街18巷23號2樓",
+    "phone": "(03)5327961",
+    "capacity": 45,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.809816,
+    "lng": 120.973364,
+    "links": {}
+  },
+  {
+    "id": "CW11304017",
+    "name": "新竹市私立甜心熊托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關新里關東路143號",
+    "phone": "0921346739",
+    "capacity": 23,
+    "quasiPublic": true,
+    "lat": 24.787483,
+    "lng": 121.020595,
+    "links": {}
+  },
+  {
+    "id": "CW10112292",
+    "name": "新竹市私立傑尼爾托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "香山區",
+    "address": "新竹市香山區香山里香北路252號",
+    "phone": "(03)5382223",
+    "capacity": 17,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2022,
+      "grade": "丙"
+    },
+    "lat": 24.790125,
+    "lng": 120.92504,
+    "links": {}
+  },
+  {
+    "id": "CW10605002",
+    "name": "新竹市私立堡貝嘉托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "香山區",
+    "address": "新竹市香山區頂福里中華路四段178巷69、71號1-2樓",
+    "phone": "(03)5380329",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.796639,
+    "lng": 120.949459,
+    "links": {}
+  },
+  {
+    "id": "CW11506005",
+    "name": "新竹市私立智邦科技附設托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區科園里研新三路1號",
+    "phone": "(03)6043632",
+    "capacity": 17,
+    "quasiPublic": true,
+    "lat": 24.778219,
+    "lng": 120.988175,
+    "links": {}
+  },
+  {
+    "id": "CW10112313",
+    "name": "新竹市私立湯姆熊托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區科園里科學園路107巷26號1、2樓",
+    "phone": "(03)5785880",
+    "capacity": 30,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.784466,
+    "lng": 121.011658,
+    "links": {}
+  },
+  {
+    "id": "CW10908016",
+    "name": "新竹市私立童話故事托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關新里關東路149號1-2樓",
+    "phone": "(03)6686221",
+    "capacity": 37,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.787715,
+    "lng": 121.020532,
+    "links": {}
+  },
+  {
+    "id": "CW11406003",
+    "name": "新竹市私立萌萌窩國際托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區金雅里金雅西街149號2樓",
+    "phone": "(03)5332508",
+    "capacity": 45,
+    "quasiPublic": true,
+    "lat": 24.827011,
+    "lng": 120.965283,
+    "links": {}
+  },
+  {
+    "id": "CW11202022",
+    "name": "新竹市私立開蒙國際音樂托嬰中心愛娣恩藝術校",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區科園里科學園路109號1-2樓、111號1-2樓及113號1-2樓",
+    "phone": "(03)6669111",
+    "capacity": 99,
+    "quasiPublic": true,
+    "lat": 24.784315,
+    "lng": 121.011187,
+    "links": {}
+  },
+  {
+    "id": "CW11308021",
+    "name": "新竹市私立開蒙國際音樂托嬰中心諾貝兒校",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區光田里東大路二段165號3樓",
+    "phone": "(03)5351074",
+    "capacity": 54,
+    "quasiPublic": true,
+    "lat": 24.815317,
+    "lng": 120.96581,
+    "links": {}
+  },
+  {
+    "id": "CW10112312",
+    "name": "新竹市私立園田嘉托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "香山區",
+    "address": "新竹市香山區頂埔里牛埔東路33巷50號1-3樓",
+    "phone": "(03)5389131",
+    "capacity": 15,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "優"
+    },
+    "lat": 24.798222,
+    "lng": 120.951047,
+    "links": {}
+  },
+  {
+    "id": "CW10902020",
+    "name": "新竹市私立園田嘉托嬰中心北門分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區中山里北門街48號1-3樓",
+    "phone": "(03)5221319",
+    "capacity": 61,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.80596,
+    "lng": 120.966064,
+    "links": {}
+  },
+  {
+    "id": "CW10606011",
+    "name": "新竹市私立奧樂森音樂藝術托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里立鵬路126號",
+    "phone": "(03)5790683",
+    "capacity": 60,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.791242,
+    "lng": 121.011065,
+    "links": {}
+  },
+  {
+    "id": "CW11407013",
+    "name": "新竹市私立奧樂嘉音樂藝術托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里慈雲路69號1樓、1樓夾層及2樓",
+    "phone": "(03)5630155",
+    "capacity": 74,
+    "quasiPublic": true,
+    "lat": 24.7908,
+    "lng": 121.01169,
+    "links": {}
+  },
+  {
+    "id": "CW11108009",
+    "name": "新竹市私立奧蘿拉托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區光復里水源街69號2樓",
+    "phone": "(03)5165559",
+    "capacity": 44,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "甲"
+    },
+    "lat": 24.801078,
+    "lng": 120.991508,
+    "links": {}
+  },
+  {
+    "id": "CW10112314",
+    "name": "新竹市私立微笑天空托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區金山里金山北一街100號1-2樓",
+    "phone": "(03)5788099",
+    "capacity": 24,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.777088,
+    "lng": 121.024292,
+    "links": {}
+  },
+  {
+    "id": "CW10611005",
+    "name": "新竹市私立愛兒堡七星級國際音樂托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關東里關東路56號1-2樓",
+    "phone": "(03)5790008",
+    "capacity": 109,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.78321,
+    "lng": 121.022765,
+    "links": {}
+  },
+  {
+    "id": "CW10902004",
+    "name": "新竹市私立愛兒堡國際音樂托嬰中心東大校",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區武陵里東大路二段184號1樓",
+    "phone": "(03)5322222",
+    "capacity": 35,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.816413,
+    "lng": 120.96538,
+    "links": {}
+  },
+  {
+    "id": "CW10812011",
+    "name": "新竹市私立愛空間托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里埔頂一路280號、282號、286號及288號",
+    "phone": "(03)5788111",
+    "capacity": 54,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "甲"
+    },
+    "lat": 24.791261,
+    "lng": 121.016259,
+    "links": {}
+  },
+  {
+    "id": "CW11202010",
+    "name": "新竹市私立愛空間托嬰中心悅揚分園",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里占梅路26號",
+    "phone": "(03)5778822",
+    "capacity": 60,
+    "quasiPublic": true,
+    "lat": 24.791836,
+    "lng": 121.013647,
+    "links": {}
+  },
+  {
+    "id": "CW11004011",
+    "name": "新竹市私立嘉德琳世傑托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里世傑路230號",
+    "phone": "(03)5795598",
+    "capacity": 45,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.791666,
+    "lng": 121.009606,
+    "links": {}
+  },
+  {
+    "id": "CW11404013",
+    "name": "新竹市私立慈心園托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里占梅路12號",
+    "phone": "(03)6667599",
+    "capacity": 36,
+    "quasiPublic": true,
+    "lat": 24.791582,
+    "lng": 121.013653,
+    "links": {}
+  },
+  {
+    "id": "CW10611002",
+    "name": "新竹市私立熊寶貝托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區客雅里延平路一段214巷62號1-3樓",
+    "phone": "(03)5235625",
+    "capacity": 48,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.805736,
+    "lng": 120.952878,
+    "links": {}
+  },
+  {
+    "id": "CW10804004",
+    "name": "新竹市私立樂芙托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里埔頂路528、530號1-2樓",
+    "phone": "(03)6687220",
+    "capacity": 58,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "乙"
+    },
+    "lat": 24.791531,
+    "lng": 121.017456,
+    "links": {}
+  },
+  {
+    "id": "CW11203007",
+    "name": "新竹市私立樂芙托嬰中心埔頂二館",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里埔頂路522號1-2樓",
+    "phone": "(03)6687220",
+    "capacity": 19,
+    "quasiPublic": true,
+    "lat": 24.792211,
+    "lng": 121.016912,
+    "links": {}
+  },
+  {
+    "id": "CW11406007",
+    "name": "新竹市私立樂橙托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區水田里水田街1號2樓",
+    "phone": "(03)5255718",
+    "capacity": 56,
+    "quasiPublic": true,
+    "lat": 24.811414,
+    "lng": 120.965246,
+    "links": {}
+  },
+  {
+    "id": "CW10507007",
+    "name": "新竹市私立鴨鴨托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區龍山里埔頂路586號2樓",
+    "phone": "(03)5770083",
+    "capacity": 70,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.791622,
+    "lng": 121.017389,
+    "links": {}
+  },
+  {
+    "id": "CW10905002",
+    "name": "新竹市私立璦苗人文藝術托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區埔頂里慈雲路109號",
+    "phone": "(03)5798007",
+    "capacity": 71,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.792261,
+    "lng": 121.01221,
+    "links": {}
+  },
+  {
+    "id": "CW10112316",
+    "name": "新竹市私立雙子園托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區復中里民生路211巷11號1樓",
+    "phone": "(03)5353698",
+    "capacity": 20,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "乙"
+    },
+    "lat": 24.811156,
+    "lng": 120.975048,
+    "links": {}
+  },
+  {
+    "id": "CW10207012",
+    "name": "新竹市私立寶貝天使托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關東里關東路23巷21號",
+    "phone": "(03)5790929",
+    "capacity": 24,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2022,
+      "grade": "乙"
+    },
+    "lat": 24.782652,
+    "lng": 121.021248,
+    "links": {}
+  },
+  {
+    "id": "CW10811002",
+    "name": "新竹市私立寶貝魚托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關新里關東路137號1-2樓",
+    "phone": "(03)5770666",
+    "capacity": 26,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "乙"
+    },
+    "lat": 24.787211,
+    "lng": 121.020697,
+    "links": {}
+  },
+  {
+    "id": "CW11406004",
+    "name": "新竹市私立寶貝魚托嬰中心成長館",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區關新里關新東路313號1樓-2樓",
+    "phone": "(03)5770666",
+    "capacity": 22,
+    "quasiPublic": true,
+    "lat": 24.786645,
+    "lng": 121.020427,
+    "links": {}
+  },
+  {
+    "id": "CW11306015",
+    "name": "新竹市私立護寶托嬰中心",
+    "type": "私立",
+    "county": "新竹市",
+    "district": "北區",
+    "address": "新竹市北區金雅里金農路168號1樓",
+    "phone": "(03)5353315",
+    "capacity": 36,
+    "quasiPublic": false,
+    "lat": 24.824724,
+    "lng": 120.961708,
+    "links": {}
+  },
+  {
+    "id": "CW11102009",
+    "name": "新竹市東區公共托嬰中心",
+    "type": "其他",
+    "county": "新竹市",
+    "district": "東區",
+    "address": "新竹市東區建功里金城一路50-8號",
+    "phone": "(03)5713219",
+    "capacity": 25,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "優"
+    },
+    "lat": 24.795002,
+    "lng": 121.004402,
+    "links": {}
+  },
+  {
+    "id": "CW11010010",
+    "name": "新竹市香山區公共托育家園",
+    "type": "社區公共托育家園",
+    "county": "新竹市",
+    "district": "香山區",
+    "address": "新竹市香山區內湖里內湖路109號",
+    "phone": "(03)5181865",
+    "capacity": 12,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "優"
+    },
+    "lat": 24.742106,
+    "lng": 120.90636,
+    "links": {}
+  },
+  {
+    "id": "CW11408006",
+    "name": "台欣生物科技研發股份有限公司職工福利委員會附設新竹縣私立毅宇蒙特梭利生醫園托嬰中心",
     "type": "私立",
     "county": "新竹縣",
     "district": "竹北市",
-    "address": "新竹縣竹北市光明六路60號",
-    "phone": "03-5580000",
-    "capacity": 36,
-    "quasiPublic": true,
-    "accreditation": { "year": 2023, "grade": "甲" },
-    "lat": 24.8268,
-    "lng": 121.0136,
-    "links": {
-      "facebook": "https://www.facebook.com/example-bamboowind",
-      "instagram": "https://www.instagram.com/example-bamboowind",
-      "website": "https://example.com/bamboowind"
-    }
+    "address": "新竹縣竹北市東海里生醫路一段150-1號",
+    "phone": "03-6568100#2",
+    "capacity": 27,
+    "quasiPublic": false,
+    "lat": 24.809115,
+    "lng": 121.04466,
+    "links": {}
   },
   {
-    "id": "hsc-002",
-    "name": "新竹縣竹北市公設民營松鼠家托嬰中心",
+    "id": "CW11401005",
+    "name": "新竹縣公設民營松柏托嬰中心",
+    "type": "公設民營",
+    "county": "新竹縣",
+    "district": "新豐鄉",
+    "address": "新竹縣新豐鄉松林村康樂路一段516號2樓",
+    "phone": "0986663628",
+    "capacity": 40,
+    "quasiPublic": true,
+    "lat": 24.869252,
+    "lng": 120.988826,
+    "links": {}
+  },
+  {
+    "id": "CW10912003",
+    "name": "新竹縣公設民營嘉豐托嬰中心",
     "type": "公設民營",
     "county": "新竹縣",
     "district": "竹北市",
-    "address": "新竹縣竹北市文興路一段10號",
-    "phone": "03-6580000",
-    "capacity": 45,
+    "address": "新竹縣竹北市中興里福興東路二段169號",
+    "phone": "03-5501862",
+    "capacity": 40,
     "quasiPublic": true,
-    "accreditation": { "year": 2024, "grade": "甲" },
-    "lat": 24.8149,
-    "lng": 121.0284,
-    "links": {
-      "facebook": "https://www.facebook.com/example-squirrel"
-    }
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.813656,
+    "lng": 121.030165,
+    "links": {}
   },
   {
-    "id": "hsc-003",
-    "name": "新竹縣私立禾樂托嬰中心",
+    "id": "CW11301023",
+    "name": "新竹縣公設民營福德托嬰中心",
+    "type": "公設民營",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市福德里福德街67號1樓",
+    "phone": "03-5520803",
+    "capacity": 24,
+    "quasiPublic": true,
+    "lat": 24.835601,
+    "lng": 121.009497,
+    "links": {}
+  },
+  {
+    "id": "CW11207006",
+    "name": "新竹縣公設民營綜合社會福利館托嬰中心",
+    "type": "公設民營",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北崙里光明二街91號1樓",
+    "phone": "5520609",
+    "capacity": 32,
+    "quasiPublic": true,
+    "lat": 24.832305,
+    "lng": 121.006478,
+    "links": {}
+  },
+  {
+    "id": "CW11412013",
+    "name": "新竹縣公設民營頭重托嬰中心",
+    "type": "公設民營",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮頭重里富榮街25號2樓",
+    "phone": "03-5828052",
+    "capacity": 28,
+    "quasiPublic": true,
+    "lat": 24.779629,
+    "lng": 121.03437,
+    "links": {}
+  },
+  {
+    "id": "CW10112133",
+    "name": "新竹縣私立士林托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "湖口鄉",
+    "address": "新竹縣湖口鄉中正村忠孝路61號2樓",
+    "phone": "03-5903388",
+    "capacity": 5,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.899957,
+    "lng": 121.046967,
+    "links": {}
+  },
+  {
+    "id": "CW10806007",
+    "name": "新竹縣私立小花園托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里福興路1023、1025號",
+    "phone": "03-5583531",
+    "capacity": 50,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.828425,
+    "lng": 120.999976,
+    "links": {}
+  },
+  {
+    "id": "CW11108014",
+    "name": "新竹縣私立小精靈托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北興里莊敬三路252號1樓",
+    "phone": "03-6673344",
+    "capacity": 32,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "丙"
+    },
+    "lat": 24.826771,
+    "lng": 121.027214,
+    "links": {}
+  },
+  {
+    "id": "CW10210004",
+    "name": "新竹縣私立心喜托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市新國里新光街112號",
+    "phone": "03-6568276",
+    "capacity": 35,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.839428,
+    "lng": 120.996939,
+    "links": {}
+  },
+  {
+    "id": "CW11312016",
+    "name": "新竹縣私立手掌心托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里六家五路二段240號1樓-2樓",
+    "phone": "03-6587273",
+    "capacity": 30,
+    "quasiPublic": true,
+    "lat": 24.801623,
+    "lng": 121.037865,
+    "links": {}
+  },
+  {
+    "id": "CW10606007",
+    "name": "新竹縣私立巧兒安寶托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市十興里勝利三街70號",
+    "phone": "03-5506870",
+    "capacity": 44,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.823007,
+    "lng": 121.02713,
+    "links": {}
+  },
+  {
+    "id": "CW10210006",
+    "name": "新竹縣私立巧兒安馨托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中興里嘉豐十一路一段17號",
+    "phone": "03-6580678",
+    "capacity": 92,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.810606,
+    "lng": 121.037078,
+    "links": {}
+  },
+  {
+    "id": "CW10310004",
+    "name": "新竹縣私立巧兒家園托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里嘉豐南路二段72號",
+    "phone": "03-6681472",
+    "capacity": 21,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.807071,
+    "lng": 121.031677,
+    "links": {}
+  },
+  {
+    "id": "CW10403007",
+    "name": "新竹縣私立巧兒家園旗艦托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里嘉豐南路二段68號1~2樓",
+    "phone": "0939583875",
+    "capacity": 60,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.80721,
+    "lng": 121.031748,
+    "links": {}
+  },
+  {
+    "id": "CW11212002",
+    "name": "新竹縣私立禾米托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市竹北里環北路一段123號",
+    "phone": "03-5516279",
+    "capacity": 45,
+    "quasiPublic": true,
+    "lat": 24.838952,
+    "lng": 121.020796,
+    "links": {}
+  },
+  {
+    "id": "CW11204013",
+    "name": "新竹縣私立立寶兒托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里嘉豐十一路二段59、67號2樓",
+    "phone": "03-6585159",
+    "capacity": 80,
+    "quasiPublic": true,
+    "lat": 24.803971,
+    "lng": 121.032584,
+    "links": {}
+  },
+  {
+    "id": "CW10504003",
+    "name": "新竹縣私立伊頓國際托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市新崙里中華路2-7號",
+    "phone": "03-5537733",
+    "capacity": 43,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.826483,
+    "lng": 120.997871,
+    "links": {}
+  },
+  {
+    "id": "CW11005005",
+    "name": "新竹縣私立好好窩托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市新國里環北路五段143號",
+    "phone": "03-6566736",
+    "capacity": 33,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.839098,
+    "lng": 120.99539,
+    "links": {}
+  },
+  {
+    "id": "CW11406008",
+    "name": "新竹縣私立安安托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市福德里三民路288巷6號",
+    "phone": "03-5519870",
+    "capacity": 35,
+    "quasiPublic": true,
+    "lat": 24.834415,
+    "lng": 121.010423,
+    "links": {}
+  },
+  {
+    "id": "CW11009003",
+    "name": "新竹縣私立安家托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北興里勝利十一路137號2樓",
+    "phone": "03-5505933",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.826499,
+    "lng": 121.0297,
+    "links": {}
+  },
+  {
+    "id": "CW10809008",
+    "name": "新竹縣私立成功托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里成功七街239號",
+    "phone": "03-6579419",
+    "capacity": 82,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.816258,
+    "lng": 121.024383,
+    "links": {}
+  },
+  {
+    "id": "CW11111011",
+    "name": "新竹縣私立早稻庭托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市隘口里隘口三街200號1-2樓",
+    "phone": "03-6685136",
+    "capacity": 50,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.802471,
+    "lng": 121.040754,
+    "links": {}
+  },
+  {
+    "id": "CW10112143",
+    "name": "新竹縣私立朵拉姆樂恩館托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里自強三路1號",
+    "phone": "03-6583970",
+    "capacity": 26,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.819239,
+    "lng": 121.018801,
+    "links": {}
+  },
+  {
+    "id": "CW10604008",
+    "name": "新竹縣私立竹科蔓托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市竹北里惟馨街89號",
+    "phone": "03-5512573",
+    "capacity": 26,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.838517,
+    "lng": 121.019575,
+    "links": {}
+  },
+  {
+    "id": "CW11105008",
+    "name": "新竹縣私立艾貝爾國際托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中興里光明六路東二段266號1樓(含夾層)及2樓",
+    "phone": "03-6681655",
+    "capacity": 36,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.813559,
+    "lng": 121.033413,
+    "links": {}
+  },
+  {
+    "id": "CW10810006",
+    "name": "新竹縣私立艾寶托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "湖口鄉",
+    "address": "新竹縣湖口鄉中正村達生六街228號1樓及230號1樓",
+    "phone": "03-5900252",
+    "capacity": 70,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.893363,
+    "lng": 121.042992,
+    "links": {}
+  },
+  {
+    "id": "CW11410003",
+    "name": "新竹縣私立艾寶童馨托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "湖口鄉",
+    "address": "新竹縣湖口鄉信義村中山路一段577號2樓之1",
+    "phone": "0953105067",
+    "capacity": 91,
+    "quasiPublic": false,
+    "lat": 24.89518,
+    "lng": 121.041641,
+    "links": {}
+  },
+  {
+    "id": "CW11202027",
+    "name": "新竹縣私立初果托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里興隆路二段327號",
+    "phone": "03-6583144",
+    "capacity": 52,
+    "quasiPublic": false,
+    "lat": 24.810961,
+    "lng": 121.019723,
+    "links": {}
+  },
+  {
+    "id": "CW10906007",
+    "name": "新竹縣私立圻昱托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北興里勝利十一路70號1-2樓",
+    "phone": "03-6581850",
+    "capacity": 34,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2023,
+      "grade": "丙"
+    },
+    "lat": 24.827561,
+    "lng": 121.027072,
+    "links": {}
+  },
+  {
+    "id": "CW10112579",
+    "name": "新竹縣私立我家寶貝托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中興里嘉豐一街59號1-2樓",
+    "phone": "03-5507863",
+    "capacity": 20,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.816284,
+    "lng": 121.028941,
+    "links": {}
+  },
+  {
+    "id": "CW11104004",
+    "name": "新竹縣私立貝格爾托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中興里高鐵一路30號1-2樓",
+    "phone": "5506178",
+    "capacity": 45,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.810127,
+    "lng": 121.038267,
+    "links": {}
+  },
+  {
+    "id": "CW10702015",
+    "name": "新竹縣私立亞斯藍托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市文化里文仁街112號",
+    "phone": "03-6571660",
+    "capacity": 22,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.832645,
+    "lng": 121.017935,
+    "links": {}
+  },
+  {
+    "id": "CW10112151",
+    "name": "新竹縣私立亞斯藍幸福館托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市竹仁里仁孝街12號3樓之1",
+    "phone": "03-5500488",
+    "capacity": 76,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.83562,
+    "lng": 121.012047,
+    "links": {}
+  },
+  {
+    "id": "CW11311006",
+    "name": "新竹縣私立佳德愛寶貝托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "橫山鄉",
+    "address": "新竹縣橫山鄉大肚村永昌街123巷1弄15-1號1~3樓",
+    "phone": "0955838398",
+    "capacity": 25,
+    "quasiPublic": true,
+    "lat": 24.723053,
+    "lng": 121.132036,
+    "links": {}
+  },
+  {
+    "id": "CW10908007",
+    "name": "新竹縣私立依比ㄚㄚ托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "湖口鄉",
+    "address": "新竹縣湖口鄉愛勢村中山路二段252號1樓",
+    "phone": "(03)5906696",
+    "capacity": 24,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.904648,
+    "lng": 121.045455,
+    "links": {}
+  },
+  {
+    "id": "CW10210003",
+    "name": "新竹縣私立奇果托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里縣政十街26巷19號",
+    "phone": "03-5587220",
+    "capacity": 75,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.827011,
+    "lng": 121.008572,
+    "links": {}
+  },
+  {
+    "id": "CW10612010",
+    "name": "新竹縣私立芮蒂托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "新埔鎮",
+    "address": "新竹縣新埔鎮四座里內思路63巷9號",
+    "phone": "03-5888396",
+    "capacity": 20,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.827279,
+    "lng": 121.083314,
+    "links": {}
+  },
+  {
+    "id": "CW10112136",
+    "name": "新竹縣私立金安福托嬰中心成功園",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里成功三路2號2樓",
+    "phone": "03-6585885",
+    "capacity": 60,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.819869,
+    "lng": 121.022033,
+    "links": {}
+  },
+  {
+    "id": "CW10204002",
+    "name": "新竹縣私立金寶貝托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里科大一路26號",
+    "phone": "03-6572828",
+    "capacity": 34,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.820951,
+    "lng": 121.009912,
+    "links": {}
+  },
+  {
+    "id": "CW10307010",
+    "name": "新竹縣私立金寶貝竹北二館托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里科大一路68號",
+    "phone": "03-6575766",
+    "capacity": 35,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.820951,
+    "lng": 121.009912,
+    "links": {}
+  },
+  {
+    "id": "CW11102011",
+    "name": "新竹縣私立金寶寶托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "新豐鄉",
+    "address": "新竹縣新豐鄉忠孝村建興路一段189巷8弄1號1-3樓",
+    "phone": "0956886321",
+    "capacity": 80,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.875631,
+    "lng": 120.993491,
+    "links": {}
+  },
+  {
+    "id": "CW10405001",
+    "name": "新竹縣私立信望愛托嬰中心",
     "type": "私立",
     "county": "新竹縣",
     "district": "竹東鎮",
-    "address": "新竹縣竹東鎮長春路三段20號",
-    "phone": "03-5960000",
-    "capacity": 28,
+    "address": "新竹縣竹東鎮大鄉里大林路180巷9號",
+    "phone": "03-5103120",
+    "capacity": 19,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.728963,
+    "lng": 121.087774,
+    "links": {}
+  },
+  {
+    "id": "CW10112142",
+    "name": "新竹縣私立娃娃國托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里成功二街116號",
+    "phone": "03-6587686",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.819352,
+    "lng": 121.024949,
+    "links": {}
+  },
+  {
+    "id": "CW11310012",
+    "name": "新竹縣私立星貝托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "新豐鄉",
+    "address": "新竹縣新豐鄉重興村建興路二段649號",
+    "phone": "035575533",
+    "capacity": 75,
+    "quasiPublic": true,
+    "lat": 24.897017,
+    "lng": 120.986886,
+    "links": {}
+  },
+  {
+    "id": "CW10303009",
+    "name": "新竹縣私立星苗國際托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里縣政二路南段23號",
+    "phone": "03-5588078",
+    "capacity": 78,
     "quasiPublic": false,
-    "accreditation": { "year": 2022, "grade": "丙" },
-    "lat": 24.7333,
-    "lng": 121.0866,
-    "links": {
-      "facebook": "https://www.facebook.com/example-hole",
-      "website": "https://example.com/hole"
-    }
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.820675,
+    "lng": 121.013341,
+    "links": {}
+  },
+  {
+    "id": "CW10710012",
+    "name": "新竹縣私立柏林國際托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中崙里縣政二路南段142號.",
+    "phone": "03-6571868",
+    "capacity": 28,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "丙"
+    },
+    "lat": 24.81825,
+    "lng": 121.011102,
+    "links": {}
+  },
+  {
+    "id": "CW10403006",
+    "name": "新竹縣私立美德托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "新豐鄉",
+    "address": "新竹縣新豐鄉山崎村福德街35巷5號",
+    "phone": "03-5577111",
+    "capacity": 91,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.872368,
+    "lng": 120.996302,
+    "links": {}
+  },
+  {
+    "id": "CW10609001",
+    "name": "新竹縣私立音樂寶姆國際托嬰中心竹北總校",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里文興路333號2樓",
+    "phone": "03-5504567",
+    "capacity": 105,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.814106,
+    "lng": 121.022156,
+    "links": {}
+  },
+  {
+    "id": "CW11408005",
+    "name": "新竹縣私立展莛荌托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里縣政五街42號",
+    "phone": "03-5585935",
+    "capacity": 40,
+    "quasiPublic": true,
+    "lat": 24.824855,
+    "lng": 121.012867,
+    "links": {}
+  },
+  {
+    "id": "CW10112130",
+    "name": "新竹縣私立庫奇托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市竹仁里中山路257號2樓",
+    "phone": "03-5558088",
+    "capacity": 15,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.836075,
+    "lng": 121.019289,
+    "links": {}
+  },
+  {
+    "id": "CW10702014",
+    "name": "新竹縣私立笑哈哈托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里興隆路一段491號1樓",
+    "phone": "03-5588882",
+    "capacity": 23,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.819479,
+    "lng": 121.009115,
+    "links": {}
+  },
+  {
+    "id": "CW10606001",
+    "name": "新竹縣私立理想圓托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里六家五路二段93號",
+    "phone": "03-6587336",
+    "capacity": 46,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.804815,
+    "lng": 121.034438,
+    "links": {}
+  },
+  {
+    "id": "CW11312002",
+    "name": "新竹縣私立理想圓托嬰中心六家館",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里六家五路一段178號",
+    "phone": "03-6670507",
+    "capacity": 32,
+    "quasiPublic": true,
+    "lat": 24.808832,
+    "lng": 121.02625,
+    "links": {}
+  },
+  {
+    "id": "CW11503014",
+    "name": "新竹縣私立凱馨托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市隘口里高鐵八路66號1樓",
+    "phone": "03-6682722",
+    "capacity": 53,
+    "quasiPublic": false,
+    "lat": 24.808862,
+    "lng": 121.042736,
+    "links": {}
+  },
+  {
+    "id": "CW11204012",
+    "name": "新竹縣私立創世愛托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮上舘里中豐路二段168號1樓",
+    "phone": "03-5102255",
+    "capacity": 25,
+    "quasiPublic": true,
+    "lat": 24.722452,
+    "lng": 121.093824,
+    "links": {}
+  },
+  {
+    "id": "CW10112582",
+    "name": "新竹縣私立喜多托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市十興里勝利二路38號2樓",
+    "phone": "03-6578672",
+    "capacity": 20,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.822965,
+    "lng": 121.025096,
+    "links": {}
+  },
+  {
+    "id": "CW10112147",
+    "name": "新竹縣私立童言嬰語托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里福興路665號1-2樓",
+    "phone": "03-5589497",
+    "capacity": 32,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "links": {}
+  },
+  {
+    "id": "CW10511004",
+    "name": "新竹縣私立萊萊托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市興安里縣政二路424號2、3樓",
+    "phone": "03-6571571",
+    "capacity": 68,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "丙"
+    },
+    "lat": 24.828382,
+    "lng": 121.017008,
+    "links": {}
+  },
+  {
+    "id": "CW11205003",
+    "name": "新竹縣私立開蒙國際音樂托嬰中心二重感統校",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮二重里中興路三段390號1-2樓",
+    "phone": "03-5828800",
+    "capacity": 75,
+    "quasiPublic": true,
+    "lat": 24.770823,
+    "lng": 121.051973,
+    "links": {}
+  },
+  {
+    "id": "CW11111013",
+    "name": "新竹縣私立開蒙國際音樂托嬰中心成功校",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里成功五街63號2樓",
+    "phone": "03-6675000",
+    "capacity": 60,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.818932,
+    "lng": 121.023375,
+    "links": {}
+  },
+  {
+    "id": "CW11206015",
+    "name": "新竹縣私立開蒙國際音樂托嬰中心竹北勝利感統藝術校",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北興里勝利十一路65號2樓",
+    "phone": "03-5500143",
+    "capacity": 57,
+    "quasiPublic": true,
+    "lat": 24.827599,
+    "lng": 121.027604,
+    "links": {}
+  },
+  {
+    "id": "CW10112581",
+    "name": "新竹縣私立陽森托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里自強南路210號3樓",
+    "phone": "03-6581992",
+    "capacity": 35,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.814587,
+    "lng": 121.023774,
+    "links": {}
+  },
+  {
+    "id": "CW10112135",
+    "name": "新竹縣私立雅比斯托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市十興里勝利六街127號",
+    "phone": "03-6580962",
+    "capacity": 43,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.824374,
+    "lng": 121.027995,
+    "links": {}
+  },
+  {
+    "id": "CW10902014",
+    "name": "新竹縣私立園田嘉托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北興里莊敬北路162號",
+    "phone": "(03)6588728",
+    "capacity": 76,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.826957,
+    "lng": 121.025304,
+    "links": {}
+  },
+  {
+    "id": "CW10308008",
+    "name": "新竹縣私立園田嘉托嬰中心 工研院分園",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮頭重里中興路4段195號4館1-2樓",
+    "phone": "03-5820582#58",
+    "capacity": 81,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.774329,
+    "lng": 121.047668,
+    "links": {}
+  },
+  {
+    "id": "CW11104006",
+    "name": "新竹縣私立園田嘉托嬰中心十興分園",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北興里十興路一段261號1樓及263號1樓",
+    "phone": "6675627",
+    "capacity": 60,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "優"
+    },
+    "lat": 24.829448,
+    "lng": 121.028201,
+    "links": {}
+  },
+  {
+    "id": "CW11304015",
+    "name": "新竹縣私立園田嘉托嬰中心光明分園",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中興里光明六路東二段216號1樓及2樓(含夾層)",
+    "phone": "03-6675627",
+    "capacity": 57,
+    "quasiPublic": true,
+    "lat": 24.814646,
+    "lng": 121.032382,
+    "links": {}
+  },
+  {
+    "id": "CW11101016",
+    "name": "新竹縣私立愛丁堡國際蒙特梭利托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "新豐鄉",
+    "address": "新竹縣新豐鄉忠孝村忠一街247號2樓",
+    "phone": "03-5590178",
+    "capacity": 80,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "優"
+    },
+    "lat": 24.879923,
+    "lng": 120.998112,
+    "links": {}
+  },
+  {
+    "id": "CW10405002",
+    "name": "新竹縣私立愛丁堡藝術蒙特梭利托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "新豐鄉",
+    "address": "新竹縣新豐鄉忠孝村孝三街22-1號1樓",
+    "phone": "03-5595988",
+    "capacity": 34,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.878327,
+    "lng": 120.997666,
+    "links": {}
+  },
+  {
+    "id": "CW11011008",
+    "name": "新竹縣私立愛兒寶托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "關西鎮",
+    "address": "新竹縣關西鎮西安里北平路166號1樓",
+    "phone": "03-5170876",
+    "capacity": 22,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.794084,
+    "lng": 121.172697,
+    "links": {}
+  },
+  {
+    "id": "CW11311008",
+    "name": "新竹縣私立愛兒寶托嬰中心竹北館",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市竹北里中山路284號1-3樓",
+    "phone": "03-6560585",
+    "capacity": 20,
+    "quasiPublic": true,
+    "lat": 24.837684,
+    "lng": 121.01643,
+    "links": {}
+  },
+  {
+    "id": "CW11105012",
+    "name": "新竹縣私立愛空間托嬰中心二重分園一館",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮二重里光明路126巷3弄10號1樓(含夾層)",
+    "phone": "03-5825566",
+    "capacity": 28,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.769872,
+    "lng": 121.05755,
+    "links": {}
+  },
+  {
+    "id": "CW11105013",
+    "name": "新竹縣私立愛空間托嬰中心二重分園二館",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮二重里光明路126巷3弄12號1樓(含夾層)",
+    "phone": "03-5825566",
+    "capacity": 23,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.770001,
+    "lng": 121.057467,
+    "links": {}
+  },
+  {
+    "id": "CW11307007",
+    "name": "新竹縣私立愛樂優托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市隘口里隘口七街35號1-2樓",
+    "phone": "03-5500282",
+    "capacity": 35,
+    "quasiPublic": true,
+    "lat": 24.801647,
+    "lng": 121.040434,
+    "links": {}
+  },
+  {
+    "id": "CW10112602",
+    "name": "新竹縣私立愛寶貝托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市竹仁里文化街84號",
+    "phone": "03-5531143",
+    "capacity": 20,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.836138,
+    "lng": 121.015899,
+    "links": {}
+  },
+  {
+    "id": "CW10112153",
+    "name": "新竹縣私立瑞菈托嬰中心高鐵館",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市隘口里文興路二段150號2樓",
+    "phone": "03-5508080",
+    "capacity": 51,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2025,
+      "grade": "乙"
+    },
+    "lat": 24.806496,
+    "lng": 121.037223,
+    "links": {}
+  },
+  {
+    "id": "CW11301015",
+    "name": "新竹縣私立瑞菈國際托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中崙里新竹縣竹北市中崙里18鄰福興路999號1~2樓",
+    "phone": "5583599",
+    "capacity": 39,
+    "quasiPublic": true,
+    "lat": 24.826075,
+    "lng": 121.004938,
+    "links": {}
+  },
+  {
+    "id": "CW11105011",
+    "name": "新竹縣私立道禾親民托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮頭重里中興路四段587號",
+    "phone": "03-66116699",
+    "capacity": 42,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.777069,
+    "lng": 121.039215,
+    "links": {}
+  },
+  {
+    "id": "CW10112611",
+    "name": "新竹縣私立夢想島托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市十興里莊敬三路41號、43號、43-1號",
+    "phone": "03-6578593",
+    "capacity": 57,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.822486,
+    "lng": 121.024975,
+    "links": {}
+  },
+  {
+    "id": "CW10208004",
+    "name": "新竹縣私立夢想島嘉豐托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中興里嘉豐五路一段1號2樓",
+    "phone": "03-6578593",
+    "capacity": 137,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.815433,
+    "lng": 121.031634,
+    "links": {}
+  },
+  {
+    "id": "CW10605001",
+    "name": "新竹縣私立樂姸托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市中興里嘉豐六路一段25號",
+    "phone": "03-6670055",
+    "capacity": 26,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.813601,
+    "lng": 121.032047,
+    "links": {}
+  },
+  {
+    "id": "CW11003010",
+    "name": "新竹縣私立樂淇思國際音樂托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里縣政二路南段62、66、68號",
+    "phone": "03-5585566",
+    "capacity": 50,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "乙"
+    },
+    "lat": 24.81825,
+    "lng": 121.011102,
+    "links": {}
+  },
+  {
+    "id": "CW10112580",
+    "name": "新竹縣私立閱讀樹托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里嘉豐五路二段119號1-3樓",
+    "phone": "03-5588555",
+    "capacity": 25,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.807976,
+    "lng": 121.024981,
+    "links": {}
+  },
+  {
+    "id": "CW10908014",
+    "name": "新竹縣私立優尼肯托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市鹿場里成功十一街150號3樓",
+    "phone": "03-6675329",
+    "capacity": 40,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.814256,
+    "lng": 121.023209,
+    "links": {}
+  },
+  {
+    "id": "CW10501009",
+    "name": "新竹縣私立優生園托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市斗崙里光明九路36-2號",
+    "phone": "03-5532111",
+    "capacity": 50,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.823692,
+    "lng": 121.01272,
+    "links": {}
+  },
+  {
+    "id": "CW10112134",
+    "name": "新竹縣私立優葆托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市十興里勝利七街一段336號2樓",
+    "phone": "03-5505326",
+    "capacity": 25,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.824418,
+    "lng": 121.029087,
+    "links": {}
+  },
+  {
+    "id": "CW10112131",
+    "name": "新竹縣私立檸檬樹托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "新埔鎮",
+    "address": "新竹縣新埔鎮文山里褒忠路91號",
+    "phone": "035897717",
+    "capacity": 12,
+    "quasiPublic": false,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.829536,
+    "lng": 121.035614,
+    "links": {}
+  },
+  {
+    "id": "CW10112140",
+    "name": "新竹縣私立寶貝托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮二重里民族路91號",
+    "phone": "03-5830387",
+    "capacity": 15,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "乙"
+    },
+    "lat": 24.770778,
+    "lng": 121.056161,
+    "links": {}
+  },
+  {
+    "id": "CW11502010",
+    "name": "新竹縣私立寶貝窩托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市東平里六家五路二段222號1-2樓",
+    "phone": "0975205136",
+    "capacity": 25,
+    "quasiPublic": true,
+    "lat": 24.801847,
+    "lng": 121.037274,
+    "links": {}
+  },
+  {
+    "id": "CW11202026",
+    "name": "新竹縣私立蘋果圓托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮中正里工業一路10號",
+    "phone": "03-5102310",
+    "capacity": 30,
+    "quasiPublic": true,
+    "lat": 24.730465,
+    "lng": 121.094107,
+    "links": {}
+  },
+  {
+    "id": "CW11103006",
+    "name": "新竹縣政府竹東國小社區公共托育家園",
+    "type": "社區公共托育家園",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮東華里康寧街1號(至善樓2樓)",
+    "phone": "0968809236",
+    "capacity": 12,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.735194,
+    "lng": 121.088327,
+    "links": {}
+  },
+  {
+    "id": "CW10906008",
+    "name": "新竹縣政府東正社區公共托育家園",
+    "type": "社區公共托育家園",
+    "county": "新竹縣",
+    "district": "竹東鎮",
+    "address": "新竹縣竹東鎮東寧里中豐路一段90號3樓",
+    "phone": "0937602001",
+    "capacity": 12,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "甲"
+    },
+    "lat": 24.72341,
+    "lng": 121.098655,
+    "links": {}
+  },
+  {
+    "id": "CW10812012",
+    "name": "新竹縣政府社區公共托育家園",
+    "type": "社區公共托育家園",
+    "county": "新竹縣",
+    "district": "竹北市",
+    "address": "新竹縣竹北市北崙里光明六路10號(B棟一樓)",
+    "phone": "03-5586905",
+    "capacity": 12,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2023,
+      "grade": "優"
+    },
+    "lat": 24.826862,
+    "lng": 121.012918,
+    "links": {}
+  },
+  {
+    "id": "CW11103007",
+    "name": "新竹縣政府新埔社區公共托育家園",
+    "type": "社區公共托育家園",
+    "county": "新竹縣",
+    "district": "新埔鎮",
+    "address": "新竹縣新埔鎮新民里中正路776號2樓(後棟廳)",
+    "phone": "5885112",
+    "capacity": 12,
+    "quasiPublic": true,
+    "accreditation": {
+      "year": 2024,
+      "grade": "甲"
+    },
+    "lat": 24.828042,
+    "lng": 121.071278,
+    "links": {}
+  },
+  {
+    "id": "CW11410005",
+    "name": "精英國際教育管理顧問股份有限公司附設新竹縣私立精英寶貝國際托嬰中心",
+    "type": "私立",
+    "county": "新竹縣",
+    "district": "湖口鄉",
+    "address": "新竹縣湖口鄉鳳山村三民南路2之7號1樓",
+    "phone": "00000000",
+    "capacity": 118,
+    "quasiPublic": true,
+    "lat": 24.863684,
+    "lng": 120.993009,
+    "links": {}
   }
 ]

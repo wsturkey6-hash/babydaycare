@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="copyright" content="本網頁著作權屬衛生福利部社會及家庭署">
+<meta name="keywords" content="衛生福利部社會及家庭署,衛服部,社家署,托育人員,保母,登記管理資訊網,托育,媒合平臺">
+<meta name="description" content="托育媒合平臺。">
+<meta name="_csrf_parameter" content="_csrf"/>
+<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+<meta name="_csrf" content="35f9f29f-95c0-4fac-a7c2-b0c1bec4cf12"/>
+<link rel="shortcut icon" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<link rel="bookmark" href="/css/images/favicon-1d566a8e8fce305ce1d5dfff111ae830.ico">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/css/libs/bootstrap/4.1.1/bootstrap.min-35db544454a555d758e1ec99f9628359.css" >
+<link rel="stylesheet" href="/css/libs/jquery-ui/1.12.1/jquery-ui-0f844d2de01e1e6a907010529d33fb98.css" />
+<link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min-269550530cc127b6aa5a35925a7de6ce.css">
+<link rel="stylesheet" href="/css/admin/bootstrap-clockpicker.min-693f53128abef48ffaf0e8c58dd97a15.css">
+<!-- custom -->
+<link rel="stylesheet" href="/css/libs/material-design-iconic-font/2.2.0/material-design-iconic-font.min-e9365fe85b7e4db79a87015e52c3db6c.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-datepicker/2.0/datepicker-1d825165f86029aee99dacae845d26b3.css" >
+<link rel="stylesheet" href="/css/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload.min-ef3e2fd3fdc35a565f5ff264892f4cd4.css" >
+<link rel="stylesheet" href="/css/home/main-03a3178c930cadfa32237407648a842b.css" >
+<link rel="stylesheet" href="/css/home/page-caed0b526487d80eee17856df6f7f5d6.css" >
+
+<!-- javascript -->
+<script src="/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min-5869c96cc8f19086aee625d670d741f9.js"></script>
+<script src="/webjars/bootstrap-notify/3.1.3/bootstrap-notify.min-35eb2c2185524eecb2b772b667552014.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/jquery.validate.min-9346ec27896981bc4c0b146cf327727a.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/dist/additional-methods.min-3a53c5eac97b98ed3833970d43bf7fc9.js"></script>
+<script src="/webjars/jquery-validation/1.16.0/src/localization/messages_zh_TW-3d6e5c045471c66bff6842b1da45a9bf.js"></script>
+<script src="/webjars/clockpicker/0.0.7/dist/bootstrap-clockpicker.min-28af1dfd23b1a43c8094fb6440d18170.js"></script>
+<script src="/js/libs/jquery-ui/1.13.2/jquery-ui.min-a5101b2e2e8a8aa3d566357905d07637.js" ></script>
+<script src="/js/protection/csrf-f0e3e1f500a85b6b6788567ab7932223.js"></script>
+<script src="/js/libs/bootstrap-fileupload/2.3.1/bootstrap-fileupload-ecf2e43ccdcac1db33db73ee46464340.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/bootstrap-datepicker.min-6e8f1d598eb2e0d67db27b31eff6372e.js"></script>
+<script src="/js/libs/bootstrap-datepicker/2.0/locales/bootstrap-datepicker.zh-TW-0a863b57d8e4c67ee40c124c9bae4691.js"></script>
+<script src="/js/libs/hammer/2.0.8/hammer-946daea10fec9462a94ee2cb059810ff.js"></script>
+<script src="/js/libs/hammer/jquery.hammer.min-7d68c32753bca956f663f3be0f04b8ba.js"></script>
+<script src="/js/home/page-5107698bc0a215fbafb29dc06600a428.js"></script>
+<script src="/js/home/main-f613d37cc658a9d222def227bd067609.js"></script>
+<script src="/js/home/base-c048cc03addf424f0c387101dd4c6d19.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170492183-1"></script>
+<script>
+    com.tist.BASE_URL = "";
+    var modal = com.tist.util.ModalDialog;
+
+    function refreshCaptcha() {
+        document.getElementById('kaptcha')
+            .setAttribute('src', '/images/kaptcha.jpg?t=' + Math.random());
+    }
+
+    // Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-170492183-1');
+</script>
+  <script src="https://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=esDUigaoFdkDwrqd+/TlAXz50rLVCmR4wpHF/KfmegkPX4WlTyHofA==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6ujpCGaccQeRrEfn9q5A3drHZnXt7MZItT9TuVS1/ts0i863up8WZRpPVKotb9qyDTZJL9otSSvNzkwcdhKB+cZSWPn0k5d/OP4Jg/pu+qHccFBzZHwNuuTQWL2mK2XhynVCA8mawwIwUgn4kg+oUAtZccQ3WzQOY8pycD59JmFFgHSH6mxWLCoa5/fSr13kUszahZG0+xSbvGV6ODPX08wS0YafoqhiAF7Zoo5/h5GRiTjUrh+JbsZA3UA3xe8YIdmEetg9P6w68PU4zwKHAin9D+fYf8bpjdiV7XPjleiyDARgP/s+/D7ZxJ/IDv599QK350QfS4F+LmOZwvENvyANAK78fJqn+5K5IQN/ZkDnDKWKFQtWS93JM6BWlIUQRrIP8yYGiWrg8GEh03QR32I5xrZF5mvWbu1hxAhfejzGiNcRZZNBaFPLzPKHm1M20q0K/9RS2iKak=" charset="utf-8"></script>
+  <title>托嬰中心查詢-托育媒合平臺-衛生福利部社會及家庭署</title>
+</head>
+<body>
+<a href="#main" id="js-asky_main" class="acesKy">跳至主要內容區塊</a>
+<!--導覽列-->
+<nav class="navbar navbar-light">
+  <a href="#U" id="Up"  accesskey="U" class="acesKy" title="上方功能區塊"  >:::</a>
+  <div class="container">
+    <h1 class="navbar-brand"><a href="/home/index" class="logo" title="托育媒合平臺" ><img src="/css/images/home/logo-29844914594849ad02098b20cf3bb408.png"
+          class="img-fluid" alt="托育媒合平臺-衛生福利部社會及家庭署"></a>
+    </h1>
+    <div class="nav-pack">
+      <a href="#M" id="MU"  accesskey="M" class="acesKy" title="選單連結區塊"  >:::</a>
+      <button id="js-navfold" class="btn nav-fold fa-bars nav-item" title="選單"><span class="d-none">選單</span></button>
+      <div id="js-dpdnList_top" class="top-dpdnList">
+        <a href="/home/sitemap" class="fa-sitemap nav-item" title="網站導覽" >網站導覽</a>
+        <a href="/member"
+           class="fa-user-circle nav-item"  title="會員登入"  >
+            會員登入</a>
+      </div>
+    </div>
+    <div id="js-dpdnList_btm" class="mainNav text-center">
+      <div class="listItem">
+        <a href="#js-hvrlist1" class="js-hvr_btn hvrbtn news" title="網站公告" >網站公告</a>
+        <div class="childlist" id="js-hvrlist1">
+          <a href="/home/news"  title="最新消息" >最新消息</a>
+          <a href="/home/charge-refund" title="收退費規定" >收退費規定</a>
+          <a href="/home/laws"  title="托育相關法令" >托育相關法令</a>
+          <a href="https://crc.sfaa.gov.tw/ChildYoungLaw/Sanction"
+             target="_blank" rel="noreferrer noopener" title="[另開新視窗]裁罰公告" >裁罰公告</a>
+          <a href="/home/shutdown-org" title="停(歇)業機構" >停(歇)業機構</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home"
+           class="js-hvr_btn hvrbtn train" title="教育訓練" >教育訓練</a>
+        <div class="childlist" id="js-hvrlist2">
+          <a href="/home/openclass" title="托育人員專業訓練課程開課資訊專區" >托育人員專業訓練課程開課資訊專區</a>
+          <a href="/home/jobtraining" title="在職教育訓練">在職教育訓練</a>
+        </div>
+      </div>
+      <div class="listItem">
+        <a href="/home/question" class="js-hvr_btn hvrbtn QA" title="Q&A"  >Q&A</a>
+      </div>
+      <div class="listItem">
+        <a href="#js-hvrlist3" class="js-hvr_btn hvrbtn Srh">托育查詢</a>
+        <div class="childlist" id="js-hvrlist3">
+          <a href="/home/nanny" title="居家托育人員(保母)查詢" >居家托育人員(保母)查詢</a>
+          <a href="/home/childcare-center" title="托嬰中心查詢" >托嬰中心查詢</a>
+          <a href="/home/childcare-locate" title="定點臨托查詢" >定點臨托查詢</a>
+        </div>
+      </div>
+      <a href="/home/link" class="listItem hvrbtn link" title="相關連結">相關連結</a>
+    </div>
+  </div>
+</nav>
+<!--主要內頁區塊-->
+<main class="container page" id="main">
+  <form id="main-form" class="w-95 center-block" action="/home/childcare-center" method="post">
+    <input type="hidden" name="_csrf" value="35f9f29f-95c0-4fac-a7c2-b0c1bec4cf12"/>
+    <!--內頁標題-->
+    <div class="page-title">
+      <a accesskey="C" title="主要內容區塊" href="#C" class="acesKy">:::</a>
+      <h2 class="fa-building">托嬰中心查詢</h2>
+      <span class="pg-pos fa-map-marker"><a href="/home/index"
+                                            title="回首頁">首頁</a> &gt; 托嬰中心查詢</span><br
+              clear="all">
+    </div>
+    <!--主要內容區塊_搜尋表單-->
+    <div class="search form">
+    <input type="hidden" id="cityId" name="cityId" value="4bc1e2f27af6e832017af6eeff480161"     >
+
+    <input type="hidden" id="townId" name="townId" value=""     >
+
+    <input type="hidden" id="latitude" name="latitude" value=""     >
+
+    <input type="hidden" id="longitude" name="longitude" value=""     >
+
+      <div class="row sgl">
+          <label class="fa-search Lb_cell" for="locateType_1">*定位方式(必填)</label><span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_1" value="1"
+                   checked="checked" required/>
+            <label for="locateType_1"
+                   class="form-check-label">所在縣市區域</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_2" value="2"
+                    required/>
+            <label for="locateType_2"
+                   class="form-check-label">自動定位</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="locateType"
+                   class="form-check-input"
+                   id="locateType_3" value="3"
+                    required/>
+            <label for="locateType_3"
+                   class="form-check-label">輸入地址</label>
+            
+        </div>
+          </span>
+      </div>
+      <div id="local-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="city">縣市及鄉鎮市區</label>
+        <span class="Cn_cell form-inline">
+          <select id="city" class="form-control" aria-label="所在縣市" required>
+              <option value="">
+請選擇縣市              </option>
+                  <option value="4bc1e2f27af6e832017af6eeff7a0172">新北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff750170">臺北市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff7d0173">桃園市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff860176">臺中市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff4a0162">臺南市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff8c0178">高雄市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff580166">宜蘭縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff890177">新竹縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff72016f">苗栗縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff5d0168">彰化縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff830175">南投縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6f016e">雲林縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff63016a">嘉義縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff3e015d">屏東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff67016b">臺東縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff600169">花蓮縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff770171">澎湖縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff460160">基隆市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff480161">新竹市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff43015f">嘉義市</option>
+                  <option value="4bc1e2f27af6e832017af6eeff6c016d">連江縣</option>
+                  <option value="4bc1e2f27af6e832017af6eeff38015c">金門縣</option>
+          </select>
+          <select id="town" class="form-control" aria-label="所在鄉鎮">
+              <option value="">
+請選擇鄉鎮              </option>
+                      <option value="4bc1e2f27af6e832017af6ef05320354">東區</option>
+                      <option value="4bc1e2f27af6e832017af6ef046d0318">北區</option>
+                      <option value="4bc1e2f27af6e832017af6ef0473031a">香山區</option>
+          </select>
+        </span>
+      </div>
+      <div id="address-district" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="address">定位設定</label>
+        <span class="Cn_cell form-inline">
+    <input type="text" id="address" name="address" value="" class='form-control' placeholder='範例：臺北市南港區忠孝東路六段' style='width:300px;'    >
+
+            <button id="address-locate" type="button" class="btn btn-danger">地址定位</button>
+          </span>
+      </div>
+      <div id="locate-distance" class="row sgl d-none">
+        <label class="fa-search Lb_cell" for="distance">定位資訊</label>
+        <div class="Cn_cell form-inline">
+          緯度：<span id="latitude-info"></span><br/>
+          經度：<span id="longitude-info"></span><br/>
+          地區：<span id="area-name"></span>
+              <input type="number" id="distance" name="distance" value="1.0" style='width:70px; display:inline-block;' min="0" max="10" class="form-control "    >
+
+ 公里(預設值：1公里)
+        </div>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="organ2type_4">托嬰中心類別</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_4" value=""
+                   checked="checked" />
+            <label for="organ2type_4"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_5" value="1"
+                    />
+            <label for="organ2type_5"
+                   class="form-check-label">私立托嬰中心</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_6" value="2"
+                    />
+            <label for="organ2type_6"
+                   class="form-check-label">托育家園</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="organ2type"
+                   class="form-check-input"
+                   id="organ2type_7" value="3"
+                    />
+            <label for="organ2type_7"
+                   class="form-check-label">公托中心</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+    <label class="fa-search Lb_cell" for="conditionskeytext"
+           class="col-sm-4 control-label">
+輸入關鍵字    </label>
+    <span class="Cn_cell">
+    <input type="text" id="conditionskeytext" name="conditions[keytext]" value="" placeholder="請輸入托嬰中心名稱" class="form-control "    >
+
+    </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="publicFlag_8">準公共化資格</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_8" value=""
+                   checked="checked" />
+            <label for="publicFlag_8"
+                   class="form-check-label">全部</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_9" value="Y"
+                    />
+            <label for="publicFlag_9"
+                   class="form-check-label">已簽約</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="publicFlag"
+                   class="form-check-input"
+                   id="publicFlag_10" value="N"
+                    />
+            <label for="publicFlag_10"
+                   class="form-check-label">未簽約</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="conditions[centerNurseryTimeIdS]_11">托育時段</label>
+        <span class="Cn_cell text">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_11" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6455e0002"  />
+                <label for="conditions[centerNurseryTimeIdS]_11"
+                   class="form-check-label">半日托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_12" class="form-check-input"
+                       value="40285e816c21e8ff016c22b671a40003"  />
+                <label for="conditions[centerNurseryTimeIdS]_12"
+                   class="form-check-label">日間托育</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="conditions[centerNurseryTimeIdS]"
+                       id="conditions[centerNurseryTimeIdS]_13" class="form-check-input"
+                       value="40285e816c21e8ff016c22b6921b0004"  />
+                <label for="conditions[centerNurseryTimeIdS]_13"
+                   class="form-check-label">臨時托育</label>
+            </div>
+            
+        </span>
+      </div>
+      <div class="row sgl">
+        <label class="fa-search Lb_cell" for="gradeFlag_14">評鑑等級(以上)</label>
+        <span class="Cn_cell text">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_14" value="1"
+                    />
+            <label for="gradeFlag_14"
+                   class="form-check-label">優等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_15" value="2"
+                    />
+            <label for="gradeFlag_15"
+                   class="form-check-label">甲等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_16" value="3"
+                    />
+            <label for="gradeFlag_16"
+                   class="form-check-label">乙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_17" value="4"
+                    />
+            <label for="gradeFlag_17"
+                   class="form-check-label">丙等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_18" value="5"
+                    />
+            <label for="gradeFlag_18"
+                   class="form-check-label">丁等</label>
+            
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="gradeFlag"
+                   class="form-check-input"
+                   id="gradeFlag_19" value="9"
+                    />
+            <label for="gradeFlag_19"
+                   class="form-check-label">尚未評鑑</label>
+            
+        </div>
+        </span>
+      </div>
+      <div class="block btn-row text-center">
+        <button type="submit" onclick="chkSearch()" class="btn btn-danger w-15">查詢</button>
+        <button type="reset" class="btn btn-danger w-15 clear">清除</button>
+        <noscript><br>若您的瀏覽器不支援JavaScript功能，則無法重置選項，請手動選擇，您要的選項</noscript>
+      </div>
+    </div>
+      <!--主要內容區塊_搜尋結果-->
+      <div class="result-list tab">
+        <a href="#List1" class="tabBtn click">托嬰中心名冊</a>
+        <table class="table table-striped table-hover tab-cntnt" summary="查詢結果清單區" id="List1">
+          <thead>
+          <tr>
+            <th class="text-center w-25">托嬰中心名稱</th>
+            <th class="text-center w-25">所在地</th>
+            <th class="text-center w-10">聯絡電話</th>
+            <th class="text-center w-10">核定收托數</th>
+            <th class="text-center w-10">準公共化資格</th>
+            <th class="text-center w-10">評鑑年度</th>
+            <th class="text-center w-10">評鑑等級</th>
+          </tr>
+          </thead>
+          <tbody class="tbody">
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112279"
+                       class="fa-external-link" title="新竹市私立國際音樂托嬰中心北區民富校" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立國際音樂托嬰中心北區民富校
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市北區西雅里民富街256號1樓</td>
+                  <td data-label="聯絡電話｜">(03)5221672</td>
+                  <td data-label="核定收托數｜">21</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112288"
+                       class="fa-external-link" title="新竹市私立卡爾威特托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立卡爾威特托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區武功里建功一路65號1樓</td>
+                  <td data-label="聯絡電話｜">(03)5749777</td>
+                  <td data-label="核定收托數｜">32</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112292"
+                       class="fa-external-link" title="新竹市私立傑尼爾托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立傑尼爾托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市香山區香山里香北路252號</td>
+                  <td data-label="聯絡電話｜">(03)5382223</td>
+                  <td data-label="核定收托數｜">17</td>
+                  <td data-label="準公共化資格｜">否</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">丙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112294"
+                       class="fa-external-link" title="新竹市私立快樂寶貝托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立快樂寶貝托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市北區武陵里東大路二段230號1-3樓</td>
+                  <td data-label="聯絡電話｜">(03)5357779</td>
+                  <td data-label="核定收托數｜">25</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112297"
+                       class="fa-external-link" title="新竹市私立小天使托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立小天使托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區建華里東南街188巷13號1樓</td>
+                  <td data-label="聯絡電話｜">(03)5624358</td>
+                  <td data-label="核定收托數｜">20</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112303"
+                       class="fa-external-link" title="新竹市私立茱蒂園托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立茱蒂園托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市北區光華里光華街78巷1號1樓</td>
+                  <td data-label="聯絡電話｜">(03)5358847</td>
+                  <td data-label="核定收托數｜">15</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112307"
+                       class="fa-external-link" title="新竹市私立孟格爾托嬰中心國泰分園" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立孟格爾托嬰中心國泰分園
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市北區湳中里武陵路179巷10號1樓</td>
+                  <td data-label="聯絡電話｜">(03)5455599</td>
+                  <td data-label="核定收托數｜">18</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112311"
+                       class="fa-external-link" title="新竹市私立貝果托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立貝果托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區埔頂里埔頂路245號1樓</td>
+                  <td data-label="聯絡電話｜">(03)5678636</td>
+                  <td data-label="核定收托數｜">18</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112312"
+                       class="fa-external-link" title="新竹市私立園田嘉托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立園田嘉托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市香山區頂埔里牛埔東路33巷50號1-3樓</td>
+                  <td data-label="聯絡電話｜">(03)5389131</td>
+                  <td data-label="核定收托數｜">15</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">優等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112313"
+                       class="fa-external-link" title="新竹市私立湯姆熊托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立湯姆熊托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區科園里科學園路107巷26號1、2樓</td>
+                  <td data-label="聯絡電話｜">(03)5785880</td>
+                  <td data-label="核定收托數｜">30</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">甲等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112314"
+                       class="fa-external-link" title="新竹市私立微笑天空托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立微笑天空托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區金山里金山北一街100號1-2樓</td>
+                  <td data-label="聯絡電話｜">(03)5788099</td>
+                  <td data-label="核定收托數｜">24</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112315"
+                       class="fa-external-link" title="新竹市私立金安福托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立金安福托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區東山里食品路134巷55號</td>
+                  <td data-label="聯絡電話｜">(03)5622611</td>
+                  <td data-label="核定收托數｜">50</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">114</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112316"
+                       class="fa-external-link" title="新竹市私立雙子園托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立雙子園托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區復中里民生路211巷11號1樓</td>
+                  <td data-label="聯絡電話｜">(03)5353698</td>
+                  <td data-label="核定收托數｜">20</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">114</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112318"
+                       class="fa-external-link" title="新竹市私立小天使托嬰中心經國分園" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立小天使托嬰中心經國分園
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區復興里經國路一段379巷15號1-2樓</td>
+                  <td data-label="聯絡電話｜">(03)5456713</td>
+                  <td data-label="核定收托數｜">50</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">111</td>
+                  <td data-label="評鑑等級｜">丙等</td>
+                </tr>
+                <tr>
+                  <td data-label="托嬰中心名稱｜">
+                    <a href="/home/childcare-center/detail/CW10112576"
+                       class="fa-external-link" title="新竹市私立娃娃國托嬰中心" ttitle="[另開新視窗]托嬰中心明細" arget="_blank" rel="noreferrer noopener" >
+                        新竹市私立娃娃國托嬰中心
+                    </a>
+                  </td>
+                  <td data-label="所在地｜">300新竹市東區仙水里光復路一段343號1-3樓</td>
+                  <td data-label="聯絡電話｜">(03)5643563</td>
+                  <td data-label="核定收托數｜">30</td>
+                  <td data-label="準公共化資格｜">是</td>
+                  <td data-label="評鑑年度｜">113</td>
+                  <td data-label="評鑑等級｜">乙等</td>
+                </tr>
+          </tbody>
+        </table>
+        <!--地理資訊區塊-->
+        <a href="#TGMap" class="tabBtn right">地理資訊</a>
+        <div id="TGMap" style="height: 516px;" class="table tab-cntnt"></div>
+        <!--頁數按鈕-->
+    <input type="hidden" name="page" value="0" />
+    <label id="totalPage" style="display:none;">6</label>
+    <!-- 頁碼 Start -->
+    <div id="pagination" aria-label="Page navigation" class="text-center pg-end">
+        <label for="" class="visible-md visible-lg">
+            共 <span
+                class="text-danger"> 81 </span> 筆資料．第 <span
+                class="text-danger">1/6</span> 頁．每頁顯示 15 筆
+            <noscript><br>若您的瀏覽器不支援JavaScript功能，則請手動選擇要切換的頁數，再按送出按鈕</noscript>
+            <noscript><input type="submit" value="送出"></noscript>
+        </label>
+                    <ul class="pagination">
+                    <li class="page-item active select">
+                        <a href="#" class="page-link" title="1">1
+                                <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="2">2
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="3">3
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="4">4
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="5">5
+                        </a>
+                    </li>
+                    <li class="page-item  select">
+                        <a href="#" class="page-link" title="6">6
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link nextPage" href="#" aria-label="Next">
+                            <span aria-hidden="true" class="fa-angle-right"></span>
+                            <span class="sr-only">後一頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link endPage" href="#" aria-label="End">
+                            <span aria-hidden="true" class="fa-angle-double-right"></span>
+                            <span class="sr-only">最後頁</span>
+                        </a>
+                    </li>
+            </ul>
+
+    </div>
+    <!-- 頁碼 End -->
+      </div>
+  </form>
+</main>
+<!--footer-->
+<footer>
+  <div class="container">
+      <a href="#B" id="bottom" accesskey="B"  class="acesKy" title="下方功能區塊" >:::</a>
+        <span class="cell left">
+                <a class="btn btn-danger" href="/home/handicap" title="無障礙說明"  >無障礙說明</a>
+                <a class="btn btn-danger" href="/home/privacy" title="隱私權保護及安全政策" >隱私權保護及安全政策</a>
+                <a class="btn btn-danger" href="/home/copyright" title="著作權聲明" >著作權聲明</a>
+                <p>本署地址：11558臺北市南港區忠孝東路六段488號12樓，聯絡電話：02-26531776<br>建議使用瀏覽器 Edge、Firefox 74、Chrome 77 以上版本；最佳瀏覽畫面設定 1440*900<br>版權所有©衛生福利部社會及家庭署</p>
+            </span><span class="cell right">
+               <a href="https://accessibility.moda.gov.tw/Applications/Detail?category=20250704184826" title="無障礙網站" ><img src="/css/images/home/A+-324b969cc5182ade2b558c189db35a73.png" alt="[另開新視窗]通過AA無障礙網頁檢測"></a>
+               <a href="https://www.gov.tw/" target="_blank" rel="noreferrer noopener" ><img src="/css/images/home/gov-f7056ba07c62c76381a4e1eb8753e879.gif" alt="[另開新視窗]我的E政府"></a><br><br>
+                <p>參訪累計：6712009人次<br></p>
+            </span>
+    </div>
+</footer>
+</body>
+<script src="/js/home/browser-70fa5c1df74bd8f7fb0b7c9ec6d2da3f.js"></script>
+<script src="/js/home/tgos-2dea7ec50e8b2b639c3ad951defb36aa.js"></script>
+<script>
+    var pOMap = document.getElementById('TGMap');
+    var mapOptions = {
+        disableDefaultUI: true, //關閉所有地圖操作介面
+        navigationControl: true,  //navigationControl(是否開啟縮放控制列)
+        dbClickZoomIn: false
+    };
+    var pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826, mapOptions);
+    var locateTypes = document.getElementsByName('locateType');
+    var locateTypesLen = locateTypes.length;
+    var city = document.getElementById('city');
+    var cityId = document.getElementById("cityId");
+    var town = document.getElementById('town');
+    var townId = document.getElementById("townId");
+    var latitude = document.getElementById('latitude'); //緯度
+    var latitudeInfo = document.getElementById('latitude-info');
+    var longitude = document.getElementById('longitude'); //經度
+    var longitudeInfo = document.getElementById('longitude-info');
+    var markerImg = new TGOS.TGImage('/css/images/home/map-marker-alt-solid-d115da5c1415f939ed34315f1abb8a33.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var locateImg = new TGOS.TGImage('/css/images/home/street-view-solid-1379f0e6e4637325401e01ee76b9984e.svg', new TGOS.TGSize(25, 40), new TGOS.TGPoint(0, 0), new TGOS.TGPoint(13, 40));
+    var markers = []; //標記點
+    function chkSearch(){
+            var city = document.getElementById('city');
+            var conditionskey = document.getElementById('conditionskeytext');
+            var locateTypes = document.querySelectorAll("[name='locateType']");
+            if(conditionskey.value!==''){
+                city.required=false;
+                for(let i=0;i<locateTypes.length;i++){
+                  locateTypes[i].required=false;
+                }
+            }
+    }
+    window.onload = function () {
+
+        function initSearchForm(locateType) {
+            var localDistrict = document.getElementById('local-district');
+            var addressDistrict = document.getElementById('address-district');
+            var locateDistance = document.getElementById('locate-distance');
+            switch (locateType) {
+                case '1': // 所在縣市區域
+                    localDistrict.classList.remove('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.add('d-none');
+                    break;
+                case '2': // 自動定位
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.add('d-none');
+                    locateDistance.classList.remove('d-none');
+                    getAutoLocate();
+                    break;
+                case '3': // 輸入地址
+                    localDistrict.classList.add('d-none');
+                    addressDistrict.classList.remove('d-none');
+                    locateDistance.classList.remove('d-none');
+                    latitudeInfo.textContent = latitude.value;
+                    longitudeInfo.textContent = longitude.value;
+                    getAddressLocate();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // 初始化標記點
+        function initMarkers() {
+            var baseUrl = '';
+            var i = '0';
+            var x = '245698.34';
+            var y = '2744055.47';
+            var markerName = '新竹市私立國際音樂托嬰中心北區民富校';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112279'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5221672' + '<br />'
+                + '300新竹市北區西雅里民富街256號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '1';
+            var x = '249648.019';
+            var y = '2743775.46';
+            var markerName = '新竹市私立卡爾威特托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112288'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5749777' + '<br />'
+                + '300新竹市東區武功里建功一路65號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '2';
+            var x = '242420.7';
+            var y = '2742533.79';
+            var markerName = '新竹市私立傑尼爾托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112292'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5382223' + '<br />'
+                + '300新竹市香山區香山里香北路252號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '3';
+            var x = '246339.609';
+            var y = '2745620.779';
+            var markerName = '新竹市私立快樂寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112294'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5357779' + '<br />'
+                + '300新竹市北區武陵里東大路二段230號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '4';
+            var x = '247463.72';
+            var y = '2743100.46';
+            var markerName = '新竹市私立小天使托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112297'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5624358' + '<br />'
+                + '300新竹市東區建華里東南街188巷13號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '5';
+            var x = '247227.44';
+            var y = '2745520.98';
+            var markerName = '新竹市私立茱蒂園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112303'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5358847' + '<br />'
+                + '300新竹市北區光華里光華街78巷1號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '6';
+            var x = '246760.34';
+            var y = '2746114.81';
+            var markerName = '新竹市私立孟格爾托嬰中心國泰分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112307'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5455599' + '<br />'
+                + '300新竹市北區湳中里武陵路179巷10號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '7';
+            var x = '251152.209';
+            var y = '2742993.379';
+            var markerName = '新竹市私立貝果托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112311'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5678636' + '<br />'
+                + '300新竹市東區埔頂里埔頂路245號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '8';
+            var x = '245050.66';
+            var y = '2743429.509';
+            var markerName = '新竹市私立園田嘉托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112312'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5389131' + '<br />'
+                + '300新竹市香山區頂埔里牛埔東路33巷50號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '9';
+            var x = '251178.829';
+            var y = '2741905.049';
+            var markerName = '新竹市私立湯姆熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112313'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5785880' + '<br />'
+                + '300新竹市東區科園里科學園路107巷26號1、2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '10';
+            var x = '252456.42';
+            var y = '2741088.029';
+            var markerName = '新竹市私立微笑天空托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112314'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5788099' + '<br />'
+                + '300新竹市東區金山里金山北一街100號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '11';
+            var x = '247577.019';
+            var y = '2743474.049';
+            var markerName = '新竹市私立金安福托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112315'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5622611' + '<br />'
+                + '300新竹市東區東山里食品路134巷55號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '12';
+            var x = '247477.519';
+            var y = '2744861.319';
+            var markerName = '新竹市私立雙子園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112316'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5353698' + '<br />'
+                + '300新竹市東區復中里民生路211巷11號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '13';
+            var x = '247923.34';
+            var y = '2745173.06';
+            var markerName = '新竹市私立小天使托嬰中心經國分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112318'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5456713' + '<br />'
+                + '300新竹市東區復興里經國路一段379巷15號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '14';
+            var x = '251803.64';
+            var y = '2741743.379';
+            var markerName = '新竹市私立娃娃國托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10112576'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5643563' + '<br />'
+                + '300新竹市東區仙水里光復路一段343號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '15';
+            var x = '252148.53';
+            var y = '2741704.27';
+            var markerName = '新竹市私立寶貝天使托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10207012'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5790929' + '<br />'
+                + '300新竹市東區關東里關東路23巷21號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '16';
+            var x = '246805.88';
+            var y = '2746090.129';
+            var markerName = '新竹市私立貝比象托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10210011'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5455336' + '<br />'
+                + '300新竹市北區湳中里武陵路179巷6-1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '17';
+            var x = '247063.66';
+            var y = '2743227.68';
+            var markerName = '新竹市私立小太陽托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10301015'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5622390' + '<br />'
+                + '300新竹市東區南大里西大路102巷2號及2號2樓之1';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '18';
+            var x = '248667.079';
+            var y = '2743893.41';
+            var markerName = '新竹市私立巴掌仙子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10301016'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5712115' + '<br />'
+                + '300新竹市東區綠水里新竹市東光路35號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '19';
+            var x = '251211.6';
+            var y = '2742410.2';
+            var markerName = '新竹市私立育慈托嬰中心育芯分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10302001'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6686268' + '<br />'
+                + '300新竹市東區龍山里龍山東路202號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '20';
+            var x = '249496.31';
+            var y = '2743746.12';
+            var markerName = '台灣基督長老教會馬偕醫療財團法人附設新竹市私立馬偕托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10404009'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6119595分機2570' + '<br />'
+                + '300新竹市東區武功里建中路40號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '21';
+            var x = '245924.48';
+            var y = '2744293.21';
+            var markerName = '新竹市私立恩潔托嬰中心少年分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10408011'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5250405' + '<br />'
+                + '300新竹市北區民富里少年街43-1號1-2樓及45號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '22';
+            var x = '249748.07';
+            var y = '2743809.439';
+            var markerName = '新竹市私立小豆芽托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10501002'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5749471' + '<br />'
+                + '300新竹市東區豐功里建美路27號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '23';
+            var x = '251129.31';
+            var y = '2742605.27';
+            var markerName = '新竹市私立育慈托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10504001'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5795136' + '<br />'
+                + '300新竹市東區龍山里埔頂三路77號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '24';
+            var x = '248086.78';
+            var y = '2743974.779';
+            var markerName = '新竹市私立艾貝比托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10505006'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5621164' + '<br />'
+                + '300新竹市東區東園里光復路二段928號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '25';
+            var x = '247307.209';
+            var y = '2744712.93';
+            var markerName = '新竹市私立婕之寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10506003'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5327961' + '<br />'
+                + '300新竹市東區復中里錦華街18巷23號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '26';
+            var x = '251758.16';
+            var y = '2742697.689';
+            var markerName = '新竹市私立鴨鴨托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10507007'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5770083' + '<br />'
+                + '300新竹市東區龍山里埔頂路586號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '27';
+            var x = '248670.67';
+            var y = '2743875.43';
+            var markerName = '新竹市私立長春藤托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10512010'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5728439' + '<br />'
+                + '300新竹市東區綠水里東光路29號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '28';
+            var x = '245945.399';
+            var y = '2743365.74';
+            var markerName = '新竹市私立小丸子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10604001'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5281019' + '<br />'
+                + '300新竹市北區育英里育英路27號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '29';
+            var x = '244890.06';
+            var y = '2743254.21';
+            var markerName = '新竹市私立堡貝嘉托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10605002'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5380329' + '<br />'
+                + '300新竹市香山區頂福里中華路四段178巷69、71號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '30';
+            var x = '246057.239';
+            var y = '2743684.22';
+            var markerName = '新竹市私立心搖籃國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10605004'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5280512' + '<br />'
+                + '300新竹市北區育英里四維路63號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '31';
+            var x = '251118.79';
+            var y = '2742655.56';
+            var markerName = '新竹市私立奧樂森音樂藝術托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10606011'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5790683' + '<br />'
+                + '300新竹市東區埔頂里立鵬路126號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '32';
+            var x = '247094.75';
+            var y = '2746317.009';
+            var markerName = '新竹市私立禾田托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10607014'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5358101' + '<br />'
+                + '300新竹市北區金竹里金竹路146、148號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '33';
+            var x = '245236.07';
+            var y = '2744261.68';
+            var markerName = '新竹市私立熊寶貝托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10611002'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5235625' + '<br />'
+                + '300新竹市北區客雅里延平路一段214巷62號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '34';
+            var x = '252301.92';
+            var y = '2741766';
+            var markerName = '新竹市私立愛兒堡七星級國際音樂托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10611005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5790008' + '<br />'
+                + '300新竹市東區關東里關東路56號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '35';
+            var x = '242271.2';
+            var y = '2742889.72';
+            var markerName = '新竹市私立同心園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10706005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5303307' + '<br />'
+                + '300新竹市香山區大庄里遊樂街29巷50號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '36';
+            var x = '251185.109';
+            var y = '2742503.299';
+            var markerName = '新竹市私立朵多托嬰中心一館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10709002'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5798276' + '<br />'
+                + '300新竹市東區龍山里慈雲路66號1-2樓（含夾層）';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '37';
+            var x = '251764.98';
+            var y = '2742687.64';
+            var markerName = '新竹市私立樂芙托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804004'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6687220' + '<br />'
+                + '300新竹市東區龍山里埔頂路528、530號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '38';
+            var x = '251180.359';
+            var y = '2742494.049';
+            var markerName = '新竹市私立羿柔托嬰中心關埔一館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6662631' + '<br />'
+                + '300新竹市東區龍山里慈雲路62號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '39';
+            var x = '251188.019';
+            var y = '2742512.56';
+            var markerName = '新竹市私立羿柔托嬰中心關埔二館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10804006'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6662631' + '<br />'
+                + '300新竹市東區龍山里慈雲路68號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '40';
+            var x = '251675.63';
+            var y = '2742083.74';
+            var markerName = '新竹市私立吉寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10806002'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6661592' + '<br />'
+                + '300新竹市東區新莊里新莊街98、100、102及106號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '41';
+            var x = '252092.7';
+            var y = '2742209.149';
+            var markerName = '新竹市私立寶貝魚托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10811002'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5770666' + '<br />'
+                + '300新竹市東區關新里關東路137號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '42';
+            var x = '251643.91';
+            var y = '2742657.66';
+            var markerName = '新竹市私立愛空間托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10812011'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5788111' + '<br />'
+                + '300新竹市東區龍山里埔頂一路280號、282號、286號及288號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '43';
+            var x = '246500.26';
+            var y = '2745443.819';
+            var markerName = '新竹市私立愛兒堡國際音樂托嬰中心東大校';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10902004'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5322222' + '<br />'
+                + '300新竹市北區武陵里東大路二段184號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '44';
+            var x = '246569.12';
+            var y = '2744286.02';
+            var markerName = '新竹市私立園田嘉托嬰中心北門分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10902020'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5221319' + '<br />'
+                + '300新竹市北區中山里北門街48號1-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '45';
+            var x = '247281.13';
+            var y = '2745478.35';
+            var markerName = '新竹市私立茱蒂園托嬰中心寶貝分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10903005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5330234' + '<br />'
+                + '300新竹市北區金華里光華南街54之5號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '46';
+            var x = '244741.859';
+            var y = '2743870.12';
+            var markerName = '新竹市北區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10903008'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5232033' + '<br />'
+                + '300新竹市北區南勢里南勢六街11號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '47';
+            var x = '250955.41';
+            var y = '2742881.649';
+            var markerName = '新竹市私立彤宇托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10903014'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5780800' + '<br />'
+                + '300新竹市東區埔頂里埔頂二路188號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '48';
+            var x = '251176.12';
+            var y = '2742484.259';
+            var markerName = '新竹市私立朵多托嬰中心二館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10903019'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5798276' + '<br />'
+                + '300新竹市東區龍山里慈雲路60號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '49';
+            var x = '251234.57';
+            var y = '2742768.379';
+            var markerName = '新竹市私立璦苗人文藝術托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10905002'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5798007' + '<br />'
+                + '300新竹市東區埔頂里慈雲路109號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '50';
+            var x = '252036.95';
+            var y = '2742033.759';
+            var markerName = '新竹市私立田果托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10906009'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5797262' + '<br />'
+                + '300新竹市東區關東里關新東路262號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '51';
+            var x = '252076.03';
+            var y = '2742264.98';
+            var markerName = '新竹市私立童話故事托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW10908016'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6686221' + '<br />'
+                + '300新竹市東區關新里關東路149號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '52';
+            var x = '242834.17';
+            var y = '2747012.71';
+            var markerName = '新竹市私立小星星托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11002006'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5360896' + '<br />'
+                + '300新竹市北區港北里中清路一段368、370號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '53';
+            var x = '250971.22';
+            var y = '2742702.52';
+            var markerName = '新竹市私立嘉德琳世傑托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11004011'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5795598' + '<br />'
+                + '300新竹市東區龍山里世傑路230號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '54';
+            var x = '240528.37';
+            var y = '2737216.45';
+            var markerName = '新竹市香山區公共托育家園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11010010'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5181865' + '<br />'
+                + '300新竹市香山區內湖里內湖路109號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '55';
+            var x = '246357.63';
+            var y = '2743485.109';
+            var markerName = '新竹市私立金安福托嬰中心林森分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11010011'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5220706' + '<br />'
+                + '300新竹市東區福德里林森路203號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '56';
+            var x = '251189.91';
+            var y = '2742631.18';
+            var markerName = '新竹市私立芳岑托嬰中心慈雲館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11011003'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5790575' + '<br />'
+                + '300新竹市東區埔頂里慈雲路75號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '57';
+            var x = '250445.03';
+            var y = '2743071.899';
+            var markerName = '新竹市東區公共托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11102009'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5713219' + '<br />'
+                + '300新竹市東區建功里金城一路50-8號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '58';
+            var x = '246460.609';
+            var y = '2745557.879';
+            var markerName = '新竹市私立心搖籃國際托嬰中心武陵園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11105005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5408606' + '<br />'
+                + '300新竹市北區武陵里武陵路66號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '59';
+            var x = '248748.109';
+            var y = '2744528.62';
+            var markerName = '新竹市私立東新托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11106001'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5751137' + '<br />'
+                + '300新竹市東區東勢里東新路186號1、2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '60';
+            var x = '249141.45';
+            var y = '2743744.89';
+            var markerName = '新竹市私立奧蘿拉托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11108009'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5165559' + '<br />'
+                + '300新竹市東區光復里水源街69號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '61';
+            var x = '251379.87';
+            var y = '2742721.31';
+            var markerName = '新竹市私立愛空間托嬰中心悅揚分園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202010'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5778822' + '<br />'
+                + '300新竹市東區埔頂里占梅路26號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '62';
+            var x = '251131.209';
+            var y = '2741888.24';
+            var markerName = '新竹市私立開蒙國際音樂托嬰中心愛娣恩藝術校';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11202022'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6669111' + '<br />'
+                + '300新竹市東區科園里科學園路109號1-2樓、111號1-2樓及113號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '63';
+            var x = '251709.95';
+            var y = '2742762.91';
+            var markerName = '新竹市私立樂芙托嬰中心埔頂二館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11203007'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6687220' + '<br />'
+                + '300新竹市東區龍山里埔頂路522號1-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '64';
+            var x = '249557.75';
+            var y = '2743681.02';
+            var markerName = '新竹市私立方舟托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11205074'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5165000' + '<br />'
+                + '300新竹市東區武功里建功一路59巷22號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '65';
+            var x = '251224.78';
+            var y = '2742738.48';
+            var markerName = '新竹市私立禾宸托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11207015'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5781177' + '<br />'
+                + '300新竹市東區埔頂里慈雲路101號1.2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '66';
+            var x = '252082.38';
+            var y = '2742239.31';
+            var markerName = '新竹市私立甜心熊托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11304017'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: 0921346739' + '<br />'
+                + '300新竹市東區關新里關東路143號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '67';
+            var x = '246129.32';
+            var y = '2746364.43';
+            var markerName = '新竹市私立護寶托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11306015'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5353315' + '<br />'
+                + '300新竹市北區金雅里金農路168號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '68';
+            var x = '246503.85';
+            var y = '2745632.18';
+            var markerName = '新竹市私立心搖籃國際托嬰中心武陵二園';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11308003'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5350996' + '<br />'
+                + '300新竹市北區武陵里武陵路67號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '69';
+            var x = '246543.69';
+            var y = '2745322.39';
+            var markerName = '新竹市私立開蒙國際音樂托嬰中心諾貝兒校';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11308021'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5351074' + '<br />'
+                + '300新竹市北區光田里東大路二段165號3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '70';
+            var x = '249138.01';
+            var y = '2743779.22';
+            var markerName = '新竹市私立小豆芽托嬰中心水源分校';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11403017'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5751277' + '<br />'
+                + '300新竹市東區光復里水源街73-1號、73-2號1樓及1樓夾層';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '71';
+            var x = '251380.399';
+            var y = '2742693.16';
+            var markerName = '新竹市私立慈心園托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11404013'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6667599' + '<br />'
+                + '300新竹市東區埔頂里占梅路12號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '72';
+            var x = '230759.068';
+            var y = '2682211.714';
+            var markerName = '新竹市私立小栗子托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11404015'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5724371' + '<br />'
+                + '300新竹市東區東勢里東新路5號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '73';
+            var x = '246490.82';
+            var y = '2746617.689';
+            var markerName = '新竹市私立萌萌窩國際托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11406003'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5332508' + '<br />'
+                + '300新竹市北區金雅里金雅西街149號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '74';
+            var x = '252065.45';
+            var y = '2742146.439';
+            var markerName = '新竹市私立寶貝魚托嬰中心成長館';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11406004'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5770666' + '<br />'
+                + '300新竹市東區關新里關新東路313號1樓-2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '75';
+            var x = '246486.609';
+            var y = '2744890.149';
+            var markerName = '新竹市私立樂橙托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11406007'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5255718' + '<br />'
+                + '300新竹市北區水田里水田街1號2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '76';
+            var x = '251182';
+            var y = '2742606.58';
+            var markerName = '新竹市私立奧樂嘉音樂藝術托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11407013'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5630155' + '<br />'
+                + '300新竹市東區埔頂里慈雲路69號1樓、1樓夾層及2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '77';
+            var x = '251343.69';
+            var y = '2742516.839';
+            var markerName = '新竹市私立沐芽托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11410007'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5777212' + '<br />'
+                + '300新竹市東區埔頂里埔頂三路12號1樓至2樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '78';
+            var x = '247698.94';
+            var y = '2740174.779';
+            var markerName = '新竹市私立小麥子宥增托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11411005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5191652' + '<br />'
+                + '300新竹市東區明湖里明湖路1010號1樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '79';
+            var x = '246147.269';
+            var y = '2743418.12';
+            var markerName = '新竹市私立星安托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11505005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)5261597' + '<br />'
+                + '300新竹市北區育英里四維路21巷25號1樓-3樓';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            var i = '80';
+            var x = '248804.239';
+            var y = '2741213.1';
+            var markerName = '新竹市私立智邦科技附設托嬰中心';
+            // 訊息視窗的內文
+            var windowsContent = '<a href="'
+                + baseUrl + '/home/childcare-center/detail/CW11506005'
+                + '" target="_blank" tilte="[另開新視窗]"  rel="noreferrer noopener" >' + '' + markerName + '</a>' + '<br />'
+                + '聯絡電話: (03)6043632' + '<br />'
+                + '300新竹市東區科園里研新三路1號';
+
+            if ((x !== '' && y !== '') && (typeof (x) != 'undefined' && typeof (y) != 'undefined')) {
+                setMarkers(i, x, y, markerName, windowsContent);
+            }
+            if (markers.length > 0) {
+                addMarkerClusters(pMap, markers);
+            }
+            setZoomStyle(pOMap);
+            pOMap.classList.add('hide');
+        }
+
+        if (city.value !== '') {
+            findTowns();
+        }
+        if (cityId.value !== '') {
+            city.value = cityId.value;
+        }
+        if (townId.value !== '') {
+            town.value = townId.value;
+        }
+        // 縣市變動時處理
+        city.addEventListener('change', function () {
+            // 尋找鄉鎮資料
+            findTowns();
+            cityId.value = this.value
+            locateTypes.forEach(locateType => {
+                // 自動設定位方式
+                if (locateType.value === '1') {
+                    locateType.checked = true;
+                }
+            })
+        }, false);
+
+        // 鄉鎮市區變動時處理
+        town.addEventListener('change', function () {
+            townId.value = this.value
+        }, false);
+
+        initMarkers();
+        for (var i = 0; i < locateTypes.length; i++) {
+            if (locateTypes[i].checked === true) {
+                initSearchForm(locateTypes[i].value)
+            }
+            locateTypes[i].addEventListener('click', function () {
+                initSearchForm(this.value);
+            });
+        }
+
+        document.getElementById('main-form').addEventListener('submit', initMarkers, false);
+        document.getElementById('main-form').onsubmit = function (e) {
+          // locateTypes.forEach(locateType => {
+          //     if (locateType.checked === true && locateType.value !== '1') { // 所在縣市區域
+          //         if (latitude.value === '' || longitude.value === '') {
+          //             alert('未取得定位。');
+          //             e.preventDefault();
+          //         }
+          //     }
+          // })
+          for (var i = 0; i < locateTypesLen; i++) {
+            if (locateTypes[i].checked === true && locateTypes[i].value !== '1') { // 所在縣市區域
+              if (latitude.value === '' || longitude.value === '' || cityId.value === '') {
+                alert('未取得定位或縣市資料。');
+                e.preventDefault();
+              }
+            }
+          }
+        }
+        document.getElementById('address-locate').addEventListener('click', getAddressLocate, false);
+    };
+</script>
+</html>

@@ -59,8 +59,14 @@ export interface Post {
   fetchedAt: string;
 }
 
+export interface DatasetMeta {
+  updatedAt?: string;
+  /** true 表示還是示範資料，尚未接上真實來源 */
+  mock?: boolean;
+}
+
 export interface Meta {
-  centersUpdatedAt?: string;
-  penaltiesUpdatedAt?: string;
-  postsUpdatedAt?: string;
+  centers?: DatasetMeta;
+  penalties?: DatasetMeta;
+  posts?: DatasetMeta;
 }

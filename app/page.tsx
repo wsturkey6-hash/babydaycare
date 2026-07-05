@@ -11,7 +11,7 @@ export default function Home() {
       centers={centersJson as unknown as Center[]}
       penalties={penaltiesJson as unknown as Penalty[]}
       posts={postsJson as unknown as Post[]}
-      meta={metaJson as unknown as Meta & { mock?: boolean }}
+      meta={metaJson as unknown as Meta}
     />
   );
 }

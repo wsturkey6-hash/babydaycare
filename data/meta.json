@@ -1,6 +1,13 @@
 {
-  "mock": true,
-  "centersUpdatedAt": "2026-07-05",
-  "penaltiesUpdatedAt": "2026-07-05",
-  "postsUpdatedAt": "2026-07-05"
+  "centers": {
+    "updatedAt": "2026-07-05"
+  },
+  "penalties": {
+    "updatedAt": "2026-07-05",
+    "mock": true
+  },
+  "posts": {
+    "updatedAt": "2026-07-05",
+    "mock": true
+  }
 }

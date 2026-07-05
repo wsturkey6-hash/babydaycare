@@ -8,14 +8,14 @@ interface Props {
   items: EnrichedCenter[];
   onSelect: (id: string) => void;
   unmatchedPenalties: Penalty[];
-  isMock: boolean;
+  mockNotice: string | null;
 }
 
 export default function CenterList({
   items,
   onSelect,
   unmatchedPenalties,
-  isMock,
+  mockNotice,
 }: Props) {
   if (items.length === 0) {
     return (
@@ -27,9 +27,9 @@ export default function CenterList({
 
   return (
     <div>
-      {isMock && (
+      {mockNotice && (
         <p className="mx-4 mt-3 rounded-md bg-apricot/15 px-3 py-1.5 text-xs md:hidden">
-          目前為示範資料，尚未接上政府名單。
+          {mockNotice}
         </p>
       )}
       <ul className="divide-y divide-line">

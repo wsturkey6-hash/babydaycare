@@ -19,7 +19,16 @@ interface Props {
   centers: Center[];
   penalties: Penalty[];
   posts: Post[];
-  meta: Meta & { mock?: boolean };
+  meta: Meta;
+}
+
+function mockNotice(meta: Meta): string | null {
+  const parts = [
+    meta.centers?.mock && "中心名單",
+    meta.penalties?.mock && "裁罰紀錄",
+    meta.posts?.mock && "招生資訊",
+  ].filter((p): p is string => Boolean(p));
+  return parts.length > 0 ? `${parts.join("、")}目前為示範資料。` : null;
 }
 
 const DEFAULT_FILTERS: Filters = {
@@ -101,9 +110,9 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
           </p>
         </header>
 
-        {meta.mock && (
+        {mockNotice(meta) && (
           <p className="mx-4 mt-2 hidden shrink-0 rounded-md bg-apricot/15 px-3 py-1.5 text-xs text-ink md:block">
-            目前為示範資料，尚未接上政府名單。
+            {mockNotice(meta)}
           </p>
         )}
 
@@ -137,7 +146,7 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
               items={visible}
               onSelect={handleSelect}
               unmatchedPenalties={unmatchedPenalties}
-              isMock={!!meta.mock}
+              mockNotice={mockNotice(meta)}
             />
           )}
         </div>
