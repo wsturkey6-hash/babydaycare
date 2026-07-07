@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   update:
@@ -41,7 +42,9 @@ jobs:
             npx tsx scripts/fetch-social.ts
           fi
 
-      - name: 有變更才 commit
+      - name: 有變更才 commit 並觸發重新部署
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -51,4 +54,6 @@ jobs:
           else
             git commit -m "chore: 每週資料更新 $(date +%F)"
             git push
+            # GITHUB_TOKEN 的 push 不會自動觸發其他 workflow，需手動觸發部署
+            gh workflow run deploy-pages.yml --ref main
           fi

@@ -34,6 +34,7 @@ function mockNotice(meta: Meta): string | null {
 
 const DEFAULT_FILTERS: Filters = {
   county: "全部",
+  district: "全部",
   recruiting: false,
   noPenalty: false,
   quasiPublic: false,
@@ -78,6 +79,8 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
       enriched.filter(({ center, status }) => {
         if (filters.county !== "全部" && center.county !== filters.county)
           return false;
+        if (filters.district !== "全部" && center.district !== filters.district)
+          return false;
         if (filters.recruiting && !status.recruiting) return false;
         if (filters.noPenalty && status.hasPenalty) return false;
         if (filters.quasiPublic && !center.quasiPublic) return false;
@@ -85,6 +88,19 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
       }),
     [enriched, filters],
   );
+
+  // 所選縣市實際有中心的鄉鎮市區
+  const districts = useMemo(() => {
+    if (filters.county === "全部") return [];
+    return [
+      ...new Set(
+        centers
+          .filter((c) => c.county === filters.county)
+          .map((c) => c.district)
+          .filter(Boolean),
+      ),
+    ].sort((a, b) => a.localeCompare(b, "zh-Hant"));
+  }, [centers, filters.county]);
 
   const selected = visible.find((e) => e.center.id === selectedId) ?? null;
   const unmatchedPenalties = penalties.filter((p) => p.centerId === null);
@@ -121,7 +137,7 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
         )}
 
         <div className="hidden shrink-0 px-4 py-3 md:block">
-          <FilterChips filters={filters} onChange={setFilters} />
+          <FilterChips filters={filters} districts={districts} onChange={setFilters} />
         </div>
 
         {/* 手機收合列 */}
@@ -168,7 +184,7 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
               <Footprints className="mb-1 h-5 w-16" />
             </div>
             <div className="mt-2 overflow-x-auto pb-0.5">
-              <FilterChips filters={filters} onChange={setFilters} />
+              <FilterChips filters={filters} districts={districts} onChange={setFilters} />
             </div>
           </div>
         </div>

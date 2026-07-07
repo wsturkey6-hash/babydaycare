@@ -6,7 +6,7 @@ import {
   Map,
   useMap,
 } from "@vis.gl/react-google-maps";
-import { useEffect } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import type { EnrichedCenter } from "@/components/AppShell";
 import { NestScene } from "@/components/Doodles";
 import type { LatLng } from "@/lib/types";
@@ -79,45 +79,112 @@ function Pin({
   );
 }
 
-function MissingKeyNotice() {
+/** 金鑰只存在使用者自己的瀏覽器，不會上傳到任何伺服器 */
+const API_KEY_STORAGE = "gmaps-api-key";
+
+function KeySetupCard({ onSave }: { onSave: (key: string) => void }) {
+  const [value, setValue] = useState("");
+
   return (
-    <div className="flex h-full items-center justify-center bg-paper p-6">
+    <div className="flex h-full items-center justify-center overflow-y-auto bg-paper p-6">
       <div className="max-w-md overflow-hidden rounded-2xl border border-line bg-panel shadow-[var(--shadow-warm-lg)]">
         <NestScene className="block w-full bg-[#fdf7ec]" />
         <div className="p-6 pt-4">
-        <h2 className="font-[family-name:var(--font-display)] text-lg font-bold">
-          地圖尚未啟用
-        </h2>
-        <p className="mt-2 text-sm leading-6 text-slate">
-          還沒有設定 Google Maps API key。設定方式：
-        </p>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-6">
-          <li>
-            到 Google Cloud Console 建立專案，啟用「Maps JavaScript API」
-          </li>
-          <li>建立 API 金鑰（建議限制網域）</li>
-          <li>
-            在專案根目錄建立 <code className="rounded bg-paper px-1">.env.local</code>
-            ，寫入
-            <code className="mt-1 block rounded bg-paper px-2 py-1 text-xs">
-              NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=你的金鑰
-            </code>
-          </li>
-          <li>重新啟動 npm run dev</li>
-        </ol>
-        <p className="mt-3 text-xs text-slate">
-          左側清單不需要金鑰，現在就可以使用。
-        </p>
+          <h2 className="font-[family-name:var(--font-display)] text-lg font-bold">
+            啟用地圖
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-slate">
+            地圖需要你自己的 Google Maps
+            金鑰（免費額度足夠個人使用）。申請方式：
+          </p>
+          <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-6">
+            <li>
+              到{" "}
+              <a
+                href="https://console.cloud.google.com/google/maps-apis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-line underline-offset-2"
+              >
+                Google Cloud Console
+              </a>{" "}
+              建立專案，啟用「Maps JavaScript API」
+            </li>
+            <li>建立 API 金鑰（建議設定 HTTP referrer 限制為本網站網址）</li>
+            <li>貼到下方欄位</li>
+          </ol>
+          <form
+            className="mt-4 flex gap-2"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const key = value.trim();
+              if (key) onSave(key);
+            }}
+          >
+            <label htmlFor="gmaps-key" className="sr-only">
+              Google Maps API 金鑰
+            </label>
+            <input
+              id="gmaps-key"
+              type="text"
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              placeholder="貼上你的 API 金鑰"
+              autoComplete="off"
+              spellCheck={false}
+              className="min-w-0 flex-1 rounded-lg border border-line bg-white px-3 py-2 font-mono text-sm focus:border-apricot focus:outline-none focus:ring-2 focus:ring-apricot/40"
+            />
+            <button
+              type="submit"
+              disabled={!value.trim()}
+              className="shrink-0 cursor-pointer rounded-lg bg-ink px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-ink/85 disabled:cursor-default disabled:opacity-40"
+            >
+              儲存並開啟地圖
+            </button>
+          </form>
+          <p className="mt-3 text-xs leading-5 text-slate">
+            金鑰只會存在這台裝置的瀏覽器（localStorage），不會上傳到任何伺服器。
+            左側清單不需要金鑰，現在就可以使用。
+          </p>
         </div>
       </div>
     </div>
   );
 }
 
-export default function MapView({ items, selectedId, onSelect, userLoc }: Props) {
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+function subscribeToStorage(onChange: () => void) {
+  window.addEventListener("storage", onChange);
+  return () => window.removeEventListener("storage", onChange);
+}
 
-  if (!apiKey) return <MissingKeyNotice />;
+export default function MapView({ items, selectedId, onSelect, userLoc }: Props) {
+  // localStorage 的金鑰；prerender（伺服器快照）一律視為未設定
+  const storedKey = useSyncExternalStore(
+    subscribeToStorage,
+    () => localStorage.getItem(API_KEY_STORAGE),
+    () => null,
+  );
+  // 剛在本頁儲存的金鑰（setItem 不會在同一分頁觸發 storage 事件）
+  const [justSaved, setJustSaved] = useState<string | null>(null);
+  const apiKey =
+    justSaved ??
+    storedKey ??
+    process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ??
+    null;
+
+  function saveKey(key: string) {
+    localStorage.setItem(API_KEY_STORAGE, key);
+    setJustSaved(key);
+  }
+
+  function resetKey() {
+    if (!confirm("要移除這台裝置上儲存的地圖金鑰嗎？")) return;
+    localStorage.removeItem(API_KEY_STORAGE);
+    // Maps JS script 無法乾淨卸載，重新載入頁面最可靠
+    location.reload();
+  }
+
+  if (apiKey === null) return <KeySetupCard onSave={saveKey} />;
 
   return (
     <APIProvider apiKey={apiKey}>
@@ -148,6 +215,13 @@ export default function MapView({ items, selectedId, onSelect, userLoc }: Props)
             />
           ))}
       </Map>
+      <button
+        type="button"
+        onClick={resetKey}
+        className="absolute bottom-2 left-2 z-10 cursor-pointer rounded-full border border-line bg-panel/90 px-2.5 py-1 text-[11px] text-slate shadow-sm backdrop-blur transition-colors hover:text-ink"
+      >
+        更換地圖金鑰
+      </button>
     </APIProvider>
   );
 }

@@ -28,18 +28,17 @@ npm run dev        # http://localhost:3000
 npm test           # vitest
 ```
 
-### Google Maps 金鑰（地圖顯示必要）
+### Google Maps 金鑰（每位使用者自備）
 
-1. 到 [Google Cloud Console](https://console.cloud.google.com/) 建立專案，啟用 **Maps JavaScript API**（需綁帳單帳戶，個人用量在免費額度內）
-2. 建立 API 金鑰，建議設定 HTTP referrer 限制
-3. 專案根目錄建立 `.env.local`（可從 `.env.local.example` 複製）：
+地圖採「使用者自帶金鑰」：開啟網頁後，地圖區會引導你申請 Google Maps API
+金鑰並貼入欄位。**金鑰只存在你自己瀏覽器的 localStorage**，不會上傳到任何伺服器，
+也不會進入版控——網站擁有者的金鑰不會被別人用爆，你的金鑰也不會被竊取。
+地圖左下角的「更換地圖金鑰」可隨時移除或更換。
 
-```
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=你的金鑰
-APIFY_TOKEN=你的Apify token   # 選填，FB/IG 抓取用
-```
+開發者也可以在 `.env.local` 設 `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`
+作為本機預設值（`.env*` 已被 gitignore）。
 
-沒有金鑰時清單與篩選仍可使用，地圖區會顯示設定說明。
+沒有金鑰時清單與篩選仍可使用。
 
 ## 資料更新
 
@@ -60,12 +59,19 @@ npx tsx scripts/bootstrap-links.ts           # 產生候選 → data/links-candi
 npx tsx scripts/bootstrap-links.ts --apply   # 合併進 centers.json
 ```
 
-## 部署（Vercel + GitHub Actions）
+## 部署（GitHub Pages）
 
-1. 推上 GitHub，[Vercel](https://vercel.com/) import 這個 repo（免費 Hobby 方案即可）
-2. Vercel 專案設定 → Environment Variables 加 `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`
-3. GitHub repo → Settings → Secrets → Actions 加 `APIFY_TOKEN`（選填）
-4. `.github/workflows/update-data.yml` 每週一 06:00（台灣時間）自動更新 `data/*.json` 並 commit，Vercel 隨之自動重新部署；也可在 Actions 頁手動觸發
+網站是全靜態輸出（`next build` 產出 `out/`），用 GitHub Pages 免費託管：
+
+1. 推上 GitHub 後，到 repo → Settings → Pages → Source 選 **GitHub Actions**
+2. `.github/workflows/deploy-pages.yml` 會在每次 push 到 main 時自動建置部署，
+   網址為 `https://<帳號>.github.io/<repo>/`
+3. `.github/workflows/update-data.yml` 每週一 06:00（台灣時間）自動更新
+   `data/*.json`、commit 並觸發重新部署；也可在 Actions 頁手動觸發
+4. （選填）GitHub repo → Settings → Secrets → Actions 加 `APIFY_TOKEN`
+   啟用 FB/IG 抓取
+
+本地預覽靜態產物：`npm run build && npm run preview`（http://127.0.0.1:3100）。
 
 ## 架構
 
