@@ -8,6 +8,7 @@ import {
 } from "@vis.gl/react-google-maps";
 import { useEffect } from "react";
 import type { EnrichedCenter } from "@/components/AppShell";
+import { NestScene } from "@/components/Doodles";
 import type { LatLng } from "@/lib/types";
 
 /** 新竹火車站：拿不到定位時的預設中心 */
@@ -66,7 +67,7 @@ function Pin({
       <div
         className={`relative rounded-full border-2 border-white shadow-md transition-transform ${
           selected ? "scale-125 ring-2 ring-ink" : ""
-        } ${status.recruiting ? "bg-sprout" : "bg-slate"} h-6 w-6`}
+        } ${status.recruiting ? "bg-sprout" : "bg-marker"} h-6 w-6`}
       >
         {status.hasPenalty && (
           <span className="seal absolute -top-1.5 -right-1.5 h-4 w-4 text-[9px] shadow-sm">
@@ -81,7 +82,9 @@ function Pin({
 function MissingKeyNotice() {
   return (
     <div className="flex h-full items-center justify-center bg-paper p-6">
-      <div className="max-w-md rounded-xl border border-line bg-white p-6 shadow-sm">
+      <div className="max-w-md overflow-hidden rounded-2xl border border-line bg-panel shadow-[var(--shadow-warm-lg)]">
+        <NestScene className="block w-full bg-[#fdf7ec]" />
+        <div className="p-6 pt-4">
         <h2 className="font-[family-name:var(--font-display)] text-lg font-bold">
           地圖尚未啟用
         </h2>
@@ -105,6 +108,7 @@ function MissingKeyNotice() {
         <p className="mt-3 text-xs text-slate">
           左側清單不需要金鑰，現在就可以使用。
         </p>
+        </div>
       </div>
     </div>
   );

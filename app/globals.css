@@ -1,35 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  /* 紙 — 頁面底色，暖白但貼近地圖底圖 */
-  --paper: #f7f5f1;
-  /* 墨 — 主要文字 */
-  --ink: #22303a;
-  /* 霧藍 — 次要文字、一般標記 */
-  --slate: #5b7285;
+  /* 奶茶紙 — 頁面底色 */
+  --paper: #f9f1e5;
+  /* 暖白 — 卡片/面板 */
+  --panel: #fffdf8;
+  /* 可可墨 — 主要文字 */
+  --ink: #40362b;
+  /* 燕麥褐 — 次要文字 */
+  --slate: #766754;
+  /* 鋼藍 — 地圖中性標記專用（與招生綠/裁罰紅保持距離） */
+  --marker: #5b7285;
   /* 苗綠 — 招生中 */
   --sprout: #128a4d;
   --sprout-soft: #e3f4ea;
   /* 硃砂 — 裁罰印章紅 */
   --cinnabar: #c03a30;
   --cinnabar-soft: #faeae8;
-  /* 杏 — 品牌點綴 */
+  /* 蜜杏 — 品牌點綴、插畫主線 */
   --apricot: #ec9f4e;
-  --line: #e5e0d7;
+  /* 燕麥 — 插畫底色 */
+  --oat: #eddcbe;
+  /* 淡櫻 — 插畫山丘 */
+  --blush: #f6dccb;
+  --line: #ecdcc3;
 }
 
 @theme inline {
   --color-paper: var(--paper);
+  --color-panel: var(--panel);
   --color-ink: var(--ink);
   --color-slate: var(--slate);
+  --color-marker: var(--marker);
   --color-sprout: var(--sprout);
   --color-sprout-soft: var(--sprout-soft);
   --color-cinnabar: var(--cinnabar);
   --color-cinnabar-soft: var(--cinnabar-soft);
   --color-apricot: var(--apricot);
+  --color-oat: var(--oat);
+  --color-blush: var(--blush);
   --color-line: var(--line);
   --font-sans: var(--font-noto-sans-tc), "PingFang TC", sans-serif;
   --font-display: var(--font-wenkai), var(--font-noto-sans-tc), serif;
+  /* 暖色陰影 */
+  --shadow-warm: 0 2px 12px rgba(178, 134, 82, 0.18);
+  --shadow-warm-lg: 0 6px 24px rgba(178, 134, 82, 0.22);
 }
 
 body {

@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import CenterDetail from "@/components/CenterDetail";
 import CenterList from "@/components/CenterList";
+import { Footprints } from "@/components/Doodles";
 import FilterChips, { type Filters } from "@/components/FilterChips";
 import MapView from "@/components/MapView";
 import { haversineKm } from "@/lib/distance";
@@ -97,14 +98,17 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
     <div className="flex h-full flex-col md:flex-row">
       {/* 側欄（桌機）／底部面板（手機） */}
       <aside
-        className={`order-2 flex min-h-0 flex-col border-t border-line bg-white transition-[height] duration-200 md:order-1 md:h-auto md:w-[400px] md:border-t-0 md:border-r ${
+        className={`order-2 flex min-h-0 flex-col border-t border-line bg-panel transition-[height] duration-200 md:order-1 md:h-auto md:w-[400px] md:border-t-0 md:border-r ${
           panelOpen ? "h-[55dvh]" : "h-14"
         }`}
       >
         <header className="hidden shrink-0 px-5 pt-5 pb-3 md:block">
-          <h1 className="font-[family-name:var(--font-display)] text-2xl font-bold">
-            竹托地圖
-          </h1>
+          <div className="flex items-end gap-3">
+            <h1 className="font-[family-name:var(--font-display)] text-2xl font-bold">
+              竹托地圖
+            </h1>
+            <Footprints className="mb-1 h-6 w-20" />
+          </div>
           <p className="mt-1 text-sm text-slate">
             新竹縣市托嬰中心：招生 × 裁罰 × 評鑑，一張地圖看完
           </p>
@@ -156,10 +160,13 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
       <div className="relative order-1 min-h-0 flex-1 md:order-2">
         {/* 手機頂部浮動列 */}
         <div className="pointer-events-none absolute inset-x-0 top-0 z-10 p-3 md:hidden">
-          <div className="pointer-events-auto rounded-xl border border-line bg-white/95 px-4 py-2.5 shadow-sm backdrop-blur">
-            <h1 className="font-[family-name:var(--font-display)] text-lg font-bold">
-              竹托地圖
-            </h1>
+          <div className="pointer-events-auto rounded-2xl border border-line bg-panel/95 px-4 py-2.5 shadow-[var(--shadow-warm)] backdrop-blur">
+            <div className="flex items-end gap-2.5">
+              <h1 className="font-[family-name:var(--font-display)] text-lg font-bold">
+                竹托地圖
+              </h1>
+              <Footprints className="mb-1 h-5 w-16" />
+            </div>
             <div className="mt-2 overflow-x-auto pb-0.5">
               <FilterChips filters={filters} onChange={setFilters} />
             </div>

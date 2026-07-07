@@ -1,6 +1,7 @@
 "use client";
 
 import type { EnrichedCenter } from "@/components/AppShell";
+import { Footprints } from "@/components/Doodles";
 import { formatDistance } from "@/lib/distance";
 import type { Penalty } from "@/lib/types";
 
@@ -19,9 +20,12 @@ export default function CenterList({
 }: Props) {
   if (items.length === 0) {
     return (
-      <p className="px-5 py-8 text-center text-sm text-slate">
-        沒有符合條件的托嬰中心。放寬上方的篩選條件試試。
-      </p>
+      <div className="px-5 py-10 text-center">
+        <Footprints className="mx-auto h-7 w-24 opacity-60" />
+        <p className="mt-3 text-sm text-slate">
+          沒有符合條件的托嬰中心。放寬上方的篩選條件試試。
+        </p>
+      </div>
     );
   }
 
@@ -42,7 +46,7 @@ export default function CenterList({
             >
               <span
                 className={`relative mt-1.5 h-3.5 w-3.5 shrink-0 rounded-full ${
-                  status.recruiting ? "bg-sprout" : "bg-slate"
+                  status.recruiting ? "bg-sprout" : "bg-marker"
                 }`}
                 aria-hidden
               >
