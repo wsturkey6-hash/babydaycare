@@ -98,6 +98,18 @@ function deriveDistrict(address: string, county: string): string {
   return m ? m[1] : "";
 }
 
+/** 讀取手動座標覆寫（政府內嵌座標對少數中心不準時用）；忽略 _comment 等底線開頭鍵 */
+function loadCoordOverrides(): Map<string, { lat: number; lng: number }> {
+  const raw: Record<string, { lat: number; lng: number }> = JSON.parse(
+    readFileSync(join(DATA_DIR, "coord-overrides.json"), "utf8"),
+  );
+  return new Map(
+    Object.entries(raw)
+      .filter(([id]) => !id.startsWith("_"))
+      .map(([id, v]) => [id, { lat: v.lat, lng: v.lng }]),
+  );
+}
+
 async function main() {
   const centersPath = join(DATA_DIR, "centers.json");
   const existing: Center[] = JSON.parse(readFileSync(centersPath, "utf8"));
@@ -106,6 +118,7 @@ async function main() {
       .filter((c) => c.links && Object.keys(c.links).length > 0)
       .map((c) => [c.id, c.links]),
   );
+  const coordOverrides = loadCoordOverrides();
 
   const session = await openSession();
   const centers: Center[] = [];
@@ -134,6 +147,9 @@ async function main() {
         console.warn(`⚠ ${row.name} 座標超界 (${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)})，略過座標`);
         latlng = undefined;
       }
+      // 手動座標覆寫優先（政府座標對某些門牌不準）
+      const override = coordOverrides.get(row.id);
+      if (override) latlng = override;
       centers.push({
         id: row.id,
         name: row.name,
