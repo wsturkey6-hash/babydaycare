@@ -22,7 +22,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  // 頁面底色（--paper），讓行動裝置瀏覽器 UI 融入背景；不鎖縮放以維持無障礙
+  themeColor: "#f9f1e5",
 };
 
 export default function RootLayout({
