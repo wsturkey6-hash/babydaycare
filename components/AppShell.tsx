@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import CenterDetail from "@/components/CenterDetail";
 import CenterList from "@/components/CenterList";
 import { Footprints } from "@/components/Doodles";
 import FilterChips, { type Filters } from "@/components/FilterChips";
 import MapView from "@/components/MapView";
 import { haversineKm } from "@/lib/distance";
+import { parseAppState, serializeAppState } from "@/lib/filters-url";
 import { getCenterStatus, type CenterStatus } from "@/lib/status";
 import type { Center, LatLng, Meta, Penalty, Post } from "@/lib/types";
 
@@ -32,19 +33,41 @@ function mockNotice(meta: Meta): string | null {
   return parts.length > 0 ? `${parts.join("、")}目前為示範資料。` : null;
 }
 
-const DEFAULT_FILTERS: Filters = {
-  county: "全部",
-  district: "全部",
-  recruiting: false,
-  noPenalty: false,
-  quasiPublic: false,
-};
+/**
+ * 篩選與選取狀態放在 URL query（可分享、可加書籤）。
+ * replaceState 不會觸發 popstate，寫入後手動通知訂閱者。
+ */
+const urlListeners = new Set<() => void>();
+
+function subscribeToUrl(onChange: () => void) {
+  window.addEventListener("popstate", onChange);
+  urlListeners.add(onChange);
+  return () => {
+    window.removeEventListener("popstate", onChange);
+    urlListeners.delete(onChange);
+  };
+}
+
+function writeUrl(queryString: string) {
+  const url = new URL(window.location.href);
+  url.search = queryString;
+  history.replaceState(null, "", url);
+  urlListeners.forEach((notify) => notify());
+}
 
 export default function AppShell({ centers, penalties, posts, meta }: Props) {
-  const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const search = useSyncExternalStore(
+    subscribeToUrl,
+    () => window.location.search,
+    () => "", // prerender 一律當作無參數
+  );
+  const { filters, selectedId } = useMemo(() => parseAppState(search), [search]);
   const [userLoc, setUserLoc] = useState<LatLng | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
+
+  function setFilters(f: Filters) {
+    writeUrl(serializeAppState(f, selectedId));
+  }
 
   useEffect(() => {
     if (!navigator.geolocation) return;
@@ -106,7 +129,7 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
   const unmatchedPenalties = penalties.filter((p) => p.centerId === null);
 
   function handleSelect(id: string | null) {
-    setSelectedId(id);
+    writeUrl(serializeAppState(filters, id));
     if (id) setPanelOpen(true);
   }
 
@@ -157,10 +180,7 @@ export default function AppShell({ centers, penalties, posts, meta }: Props) {
 
         <div className="min-h-0 flex-1 overflow-y-auto">
           {selected ? (
-            <CenterDetail
-              item={selected}
-              onBack={() => setSelectedId(null)}
-            />
+            <CenterDetail item={selected} onBack={() => handleSelect(null)} />
           ) : (
             <CenterList
               items={visible}

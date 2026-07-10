@@ -38,7 +38,11 @@ export default function CenterList({
       )}
       <ul className="divide-y divide-line">
         {items.map(({ center, status, distanceKm }) => (
-          <li key={center.id}>
+          // content-visibility 讓瀏覽器跳過畫面外列的渲染（177 列的輕量虛擬化）
+          <li
+            key={center.id}
+            className="[content-visibility:auto] [contain-intrinsic-size:auto_96px]"
+          >
             <button
               type="button"
               onClick={() => onSelect(center.id)}
