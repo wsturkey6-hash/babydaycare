@@ -16,6 +16,7 @@
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { normalizeFbPageUrl } from "../lib/fburl";
 import type { Center } from "../lib/types";
 import { runActor } from "./apify";
 import { loadEnvLocal } from "./env";
@@ -28,9 +29,13 @@ interface Candidate {
   centerId: string;
   name: string;
   facebook?: string;
+  /** 搜尋結果的頁面標題，供人工審核比對 */
+  facebookTitle?: string;
   instagram?: string;
+  instagramTitle?: string;
   website?: string;
   confirmed: boolean;
+  note?: string;
 }
 
 interface SearchItem {
@@ -82,27 +87,43 @@ async function search() {
   console.log(`要搜尋 ${targets.length} 間中心的社群連結…`);
 
   const queries = targets.map((c) => `${c.name} facebook`).join("\n");
-  const items = await runActor<SearchItem>(token, SEARCH_ACTOR, {
-    queries,
-    resultsPerPage: 5,
-    maxPagesPerQuery: 1,
-    languageCode: "zh-TW",
-    countryCode: "tw",
-  });
+  const items = await runActor<SearchItem>(
+    token,
+    SEARCH_ACTOR,
+    {
+      queries,
+      resultsPerPage: 5,
+      maxPagesPerQuery: 1,
+      languageCode: "zh-TW",
+      countryCode: "tw",
+    },
+    { timeoutMin: 30 },
+  );
 
   const candidates: Candidate[] = [...existing];
   for (const item of items) {
-    const term = item.searchQuery?.term ?? "";
-    const center = targets.find((c) => term.startsWith(c.name));
+    const term = (item.searchQuery?.term ?? "").trim();
+    // 必須精確比對：本館名可能是分館名的前綴，startsWith 會錯配
+    const center = targets.find((c) => term === `${c.name} facebook`);
     if (!center) continue;
     const results = item.organicResults ?? [];
-    const fb = results.find((r) => /facebook\.com\/(?!share|groups)/.test(r.url));
+    // 搜尋結果常是貼文網址，一律正規化成粉專首頁再收
+    let fb: { url: string; title: string } | undefined;
+    for (const r of results) {
+      const page = normalizeFbPageUrl(r.url);
+      if (page) {
+        fb = { url: page, title: r.title };
+        break;
+      }
+    }
     const ig = results.find((r) => /instagram\.com\//.test(r.url));
     candidates.push({
       centerId: center.id,
       name: center.name,
       facebook: fb?.url,
+      facebookTitle: fb?.title,
       instagram: ig?.url,
+      instagramTitle: ig?.title,
       confirmed: false,
     });
   }

@@ -8,6 +8,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { isRecruitingText } from "../lib/recruiting";
+import { truncateByCodePoint } from "../lib/text";
 import type { Center, Post } from "../lib/types";
 import { runActor } from "./apify";
 import { loadEnvLocal } from "./env";
@@ -60,7 +61,7 @@ function makePost(
     platform,
     postUrl,
     date,
-    excerpt: text.replace(/\s+/g, " ").trim().slice(0, 120),
+    excerpt: truncateByCodePoint(text.replace(/\s+/g, " ").trim(), 120),
     isRecruiting: isRecruitingText(text),
     fetchedAt: today,
   };
@@ -93,10 +94,15 @@ async function main() {
     const byUrl = new Map(
       fbCenters.map((c) => [normalizeUrl(c.links!.facebook!), c.id]),
     );
-    const items = await runActor<FbItem>(token, FB_ACTOR, {
-      startUrls: fbCenters.map((c) => ({ url: c.links!.facebook! })),
-      resultsLimit: POSTS_PER_PAGE,
-    });
+    const items = await runActor<FbItem>(
+      token,
+      FB_ACTOR,
+      {
+        startUrls: fbCenters.map((c) => ({ url: c.links!.facebook! })),
+        resultsLimit: POSTS_PER_PAGE,
+      },
+      { timeoutMin: 40 },
+    );
     for (const item of items) {
       const pageUrl = item.facebookUrl ?? item.pageUrl ?? item.inputUrl;
       const centerId = pageUrl ? byUrl.get(normalizeUrl(pageUrl)) : undefined;

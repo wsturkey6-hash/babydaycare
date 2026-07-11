@@ -8,6 +8,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import * as cheerio from "cheerio";
 import { isRecruitingText, RECRUITING_KEYWORDS } from "../lib/recruiting";
+import { stripLoneSurrogates } from "../lib/text";
 import type { Center, Post } from "../lib/types";
 
 const UA = "babydaycare-sync/1.0 (personal childcare map; weekly)";
@@ -17,9 +18,9 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 /** 取關鍵字前後文，讓卡片摘要看得出脈絡 */
 function excerptAround(text: string, re: RegExp): string {
   const m = re.exec(text);
-  if (!m) return text.slice(0, 120);
+  if (!m) return stripLoneSurrogates(text.slice(0, 120));
   const start = Math.max(0, m.index - 30);
-  return text.slice(start, start + 120).trim();
+  return stripLoneSurrogates(text.slice(start, start + 120).trim());
 }
 
 async function main() {

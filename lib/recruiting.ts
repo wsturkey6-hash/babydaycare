@@ -7,7 +7,7 @@
 export const RECRUITING_KEYWORDS =
   /(招生|招收|名額|缺額|收托(?!人數)|報名|候補|預約參觀|開放參觀)/;
 const POSITIVE = RECRUITING_KEYWORDS;
-const CLOSED = /(額滿|已滿|滿班|停止招生|暫停招生)/;
+const CLOSED = /(額滿|已滿|滿班|停止招生|暫停招生|停止收托|暫停收托|停托)/;
 const ACTIONABLE = /(候補|報名|預約參觀)/;
 
 export function isRecruitingText(text: string): boolean {

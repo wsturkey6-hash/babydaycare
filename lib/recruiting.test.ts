@@ -33,3 +33,17 @@ describe("isRecruitingText", () => {
     expect(isRecruitingText("名額已滿，開放候補登記")).toBe(true);
   });
 });
+
+describe("isRecruitingText 颱風/停托公告", () => {
+  test.each([
+    "依據新竹縣政府公告，因受颱風影響，明日停止收托一日",
+    "明天放颱風假，中心停止收托，颱風天乖乖在家",
+    "本週六暫停收托，造成不便敬請見諒",
+  ])("停托公告 → false：%s", (text) => {
+    expect(isRecruitingText(text)).toBe(false);
+  });
+
+  test("貼文尾註「熱烈招生中」→ true", () => {
+    expect(isRecruitingText("活動花絮分享 💕貝果托嬰中心熱烈招生中💕")).toBe(true);
+  });
+});
