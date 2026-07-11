@@ -42,6 +42,16 @@ function normalizeUrl(u: string): string {
   return u.toLowerCase().replace(/\/+$/, "").replace(/^https?:\/\/(www\.)?/, "");
 }
 
+/** 同一粉專可能由多間分館共用：網址 → 所有共用該粉專的中心 id */
+function groupByUrl(centers: Center[], getUrl: (c: Center) => string): Map<string, string[]> {
+  const map = new Map<string, string[]>();
+  for (const c of centers) {
+    const u = normalizeUrl(getUrl(c));
+    map.set(u, [...(map.get(u) ?? []), c.id]);
+  }
+  return map;
+}
+
 function toIsoDate(v: string | number | undefined): string | null {
   if (v == null) return null;
   const d = typeof v === "number" ? new Date(v * 1000) : new Date(v);
@@ -90,37 +100,37 @@ async function main() {
   // Facebook
   const fbCenters = centers.filter((c) => c.links?.facebook);
   if (fbCenters.length > 0) {
-    console.log(`Facebook：${fbCenters.length} 個粉專`);
-    const byUrl = new Map(
-      fbCenters.map((c) => [normalizeUrl(c.links!.facebook!), c.id]),
-    );
+    const byUrl = groupByUrl(fbCenters, (c) => c.links!.facebook!);
+    const startUrls = [...new Set(fbCenters.map((c) => c.links!.facebook!))];
+    console.log(`Facebook：${startUrls.length} 個粉專（${fbCenters.length} 間中心）`);
     const items = await runActor<FbItem>(
       token,
       FB_ACTOR,
       {
-        startUrls: fbCenters.map((c) => ({ url: c.links!.facebook! })),
+        startUrls: startUrls.map((url) => ({ url })),
         resultsLimit: POSTS_PER_PAGE,
       },
       { timeoutMin: 40 },
     );
     for (const item of items) {
       const pageUrl = item.facebookUrl ?? item.pageUrl ?? item.inputUrl;
-      const centerId = pageUrl ? byUrl.get(normalizeUrl(pageUrl)) : undefined;
+      const centerIds = pageUrl ? (byUrl.get(normalizeUrl(pageUrl)) ?? []) : [];
       const date = toIsoDate(item.time ?? item.timestamp);
-      if (!centerId || !item.url || !date || !item.text) continue;
-      posts.push(makePost(centerId, "facebook", item.url, date, item.text, today));
+      if (!item.url || !date || !item.text) continue;
+      for (const centerId of centerIds) {
+        posts.push(makePost(centerId, "facebook", item.url, date, item.text, today));
+      }
     }
   }
 
   // Instagram
   const igCenters = centers.filter((c) => c.links?.instagram);
   if (igCenters.length > 0) {
-    console.log(`Instagram：${igCenters.length} 個帳號`);
-    const byUrl = new Map(
-      igCenters.map((c) => [normalizeUrl(c.links!.instagram!), c.id]),
-    );
+    const byUrl = groupByUrl(igCenters, (c) => c.links!.instagram!);
+    const directUrls = [...new Set(igCenters.map((c) => c.links!.instagram!))];
+    console.log(`Instagram：${directUrls.length} 個帳號（${igCenters.length} 間中心）`);
     const items = await runActor<IgItem>(token, IG_ACTOR, {
-      directUrls: igCenters.map((c) => c.links!.instagram!),
+      directUrls,
       resultsType: "posts",
       resultsLimit: POSTS_PER_PAGE,
     });
@@ -128,12 +138,14 @@ async function main() {
       const src =
         item.inputUrl ??
         (item.ownerUsername ? `instagram.com/${item.ownerUsername}` : undefined);
-      const centerId = src ? byUrl.get(normalizeUrl(src)) : undefined;
+      const centerIds = src ? (byUrl.get(normalizeUrl(src)) ?? []) : [];
       const date = toIsoDate(item.timestamp);
-      if (!centerId || !item.url || !date || !item.caption) continue;
-      posts.push(
-        makePost(centerId, "instagram", item.url, date, item.caption, today),
-      );
+      if (!item.url || !date || !item.caption) continue;
+      for (const centerId of centerIds) {
+        posts.push(
+          makePost(centerId, "instagram", item.url, date, item.caption, today),
+        );
+      }
     }
   }
 
